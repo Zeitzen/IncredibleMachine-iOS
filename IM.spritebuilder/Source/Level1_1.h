@@ -6,10 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCNode.h"
+#import "GenericLevel.h"
 
-@interface Level1_1 : CCNode <CCPhysicsCollisionDelegate>
-
--(void)play;
+@interface Level1_1 : GenericLevel
 
 @end

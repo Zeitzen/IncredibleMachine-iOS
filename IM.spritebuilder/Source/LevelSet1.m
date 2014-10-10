@@ -13,10 +13,12 @@
 
 - (void)level1_1 {
     CCNode *gameplay = [CCBReader load:@"Level1_1"];
+    gameplay.name=@"gameplay";
     
-    CCScene *LevelFrame = [LevelWrapper sceneWithParameter:gameplay];
+    CCScene *LevelFrame = [CCBReader loadAsScene:@"LevelFrame"];
+    CCNode* aux = LevelFrame.children.firstObject;
+    [aux addChild:gameplay z:-10];
     
-    [LevelFrame addChild:gameplay z:-10];
     [[CCDirector sharedDirector] replaceScene:LevelFrame];
 }
 @end

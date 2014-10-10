@@ -9,19 +9,11 @@
 #import "LevelWrapper.h"
 
 @implementation LevelWrapper{
+    CCNode* _gameplay;
     CCNode* _menu;
     Boolean menuOpen;
     int displacement;
     CCSprite* _BlackBg;
-}
-
-+(LevelWrapper*)sceneWithParameter:(CCNode*)gp{
-    // The custom class in Sprite Builder is Map Scene
-    LevelWrapper* scene = (LevelWrapper*)[CCBReader loadAsScene:@"LevelFrame"];
-    // v Crash and burn below., [CCNode does not support setMapFile]
-    scene.gameplay=gp;
-    // Never makes it here
-    return scene;
 }
 
 - (void)didLoadFromCCB {
@@ -29,8 +21,9 @@
     menuOpen = FALSE;
 }
 
--(void)play{    
-    _gameplay = [self getChildByName:@"gameplay" recursively:TRUE];
+-(void)play{
+    if(_gameplay==NULL)
+        _gameplay = [self getChildByName:@"gameplay" recursively:TRUE];
     [(Level1_1*)_gameplay play];
 }
 
@@ -40,14 +33,14 @@
 
 - (void)update:(CCTime)delta {
     if(menuOpen && displacement != 100){
-        _menu.position = ccp(_menu.position.x + 5,_menu.position.y);
-        displacement+=5;
-        _BlackBg.opacity+=0.02;
+        _menu.position = ccp(_menu.position.x + 10,_menu.position.y);
+        displacement+=10;
+        _BlackBg.opacity+=0.05;
     }
     if(!menuOpen && displacement != 0){
-        _menu.position = ccp(_menu.position.x - 5,_menu.position.y);
-        displacement-=5;
-        _BlackBg.opacity-=0.02;
+        _menu.position = ccp(_menu.position.x - 10,_menu.position.y);
+        displacement-=10;
+        _BlackBg.opacity-=0.05;
 
     }
 }

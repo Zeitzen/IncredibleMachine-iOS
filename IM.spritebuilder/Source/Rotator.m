@@ -31,8 +31,8 @@
 }
 
 -(void) play {
-    rotate = TRUE;
     displacement = self.rotation;
+    rotate = TRUE;
 }
 
 -(void)rotate:(float)rotation{
