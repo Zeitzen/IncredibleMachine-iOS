@@ -11,4 +11,5 @@
 @interface Level1_1 : CCNode <CCPhysicsCollisionDelegate>
 
 -(void)play;
+
 @end

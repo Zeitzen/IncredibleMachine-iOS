@@ -11,7 +11,7 @@
 		8F00672719DDE17500E67D6E /* Trampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F00672619DDE17500E67D6E /* Trampoline.m */; };
 		8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12E0AA19E605FA001D49B1 /* Rotator.m */; };
 		8F34126D19DD29A800A17FA6 /* Level1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34126C19DD29A800A17FA6 /* Level1_1.m */; };
-		8FC0D3CA19E7156F00683E9B /* Set1Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0D3C919E7156F00683E9B /* Set1Wrapper.m */; };
+		8FC0D3CA19E7156F00683E9B /* LevelWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0D3C919E7156F00683E9B /* LevelWrapper.m */; };
 		8FC7204419E339550053A7F1 /* LevelSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7204319E339550053A7F1 /* LevelSets.m */; };
 		8FC7204819E339930053A7F1 /* LevelSet1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7204719E339930053A7F1 /* LevelSet1.m */; };
 		8FD20EFB19E625F900A5113B /* DashedCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD20EFA19E625F900A5113B /* DashedCircle.m */; };
@@ -71,8 +71,8 @@
 		8F12E0AA19E605FA001D49B1 /* Rotator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rotator.m; path = Source/Rotator.m; sourceTree = "<group>"; };
 		8F34126B19DD29A800A17FA6 /* Level1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1_1.h; path = Source/Level1_1.h; sourceTree = "<group>"; };
 		8F34126C19DD29A800A17FA6 /* Level1_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_1.m; path = Source/Level1_1.m; sourceTree = "<group>"; };
-		8FC0D3C819E7156F00683E9B /* Set1Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Set1Wrapper.h; path = Source/Set1Wrapper.h; sourceTree = "<group>"; };
-		8FC0D3C919E7156F00683E9B /* Set1Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Set1Wrapper.m; path = Source/Set1Wrapper.m; sourceTree = "<group>"; };
+		8FC0D3C819E7156F00683E9B /* LevelWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelWrapper.h; path = Source/LevelWrapper.h; sourceTree = "<group>"; };
+		8FC0D3C919E7156F00683E9B /* LevelWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelWrapper.m; path = Source/LevelWrapper.m; sourceTree = "<group>"; };
 		8FC7204219E339550053A7F1 /* LevelSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSets.h; path = Source/LevelSets.h; sourceTree = "<group>"; };
 		8FC7204319E339550053A7F1 /* LevelSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelSets.m; path = Source/LevelSets.m; sourceTree = "<group>"; };
 		8FC7204619E339930053A7F1 /* LevelSet1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSet1.h; path = Source/LevelSet1.h; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 				8FE05F7619DD03F40069F333 /* BowBall.m */,
 				8F34126B19DD29A800A17FA6 /* Level1_1.h */,
 				8F34126C19DD29A800A17FA6 /* Level1_1.m */,
-				8FC0D3C819E7156F00683E9B /* Set1Wrapper.h */,
-				8FC0D3C919E7156F00683E9B /* Set1Wrapper.m */,
+				8FC0D3C819E7156F00683E9B /* LevelWrapper.h */,
+				8FC0D3C919E7156F00683E9B /* LevelWrapper.m */,
 				8FC7204219E339550053A7F1 /* LevelSets.h */,
 				8FC7204319E339550053A7F1 /* LevelSets.m */,
 				8FC7204619E339930053A7F1 /* LevelSet1.h */,
@@ -386,7 +386,7 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				8FC7204819E339930053A7F1 /* LevelSet1.m in Sources */,
 				8F34126D19DD29A800A17FA6 /* Level1_1.m in Sources */,
-				8FC0D3CA19E7156F00683E9B /* Set1Wrapper.m in Sources */,
+				8FC0D3CA19E7156F00683E9B /* LevelWrapper.m in Sources */,
 				8FD20EFB19E625F900A5113B /* DashedCircle.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				8F00672719DDE17500E67D6E /* Trampoline.m in Sources */,

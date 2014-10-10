@@ -7,12 +7,16 @@
 //
 
 #import "LevelSet1.h"
+#import "LevelWrapper.h"
 
 @implementation LevelSet1
 
 - (void)level1_1 {
-    CCScene *gameplayScene = [CCBReader loadAsScene:@"Level1_1"];
-    [[CCDirector sharedDirector] replaceScene:gameplayScene];
+    CCNode *gameplay = [CCBReader load:@"Level1_1"];
+    
+    CCScene *LevelFrame = [LevelWrapper sceneWithParameter:gameplay];
+    
+    [LevelFrame addChild:gameplay z:-10];
+    [[CCDirector sharedDirector] replaceScene:LevelFrame];
 }
-
 @end

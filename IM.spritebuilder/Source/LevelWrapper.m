@@ -6,15 +6,22 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "Set1Wrapper.h"
-#import "Level1_1.h"
+#import "LevelWrapper.h"
 
-@implementation Set1Wrapper{
-    CCNode* _gameplay;
+@implementation LevelWrapper{
     CCNode* _menu;
     Boolean menuOpen;
     int displacement;
     CCSprite* _BlackBg;
+}
+
++(LevelWrapper*)sceneWithParameter:(CCNode*)gp{
+    // The custom class in Sprite Builder is Map Scene
+    LevelWrapper* scene = (LevelWrapper*)[CCBReader loadAsScene:@"LevelFrame"];
+    // v Crash and burn below., [CCNode does not support setMapFile]
+    scene.gameplay=gp;
+    // Never makes it here
+    return scene;
 }
 
 - (void)didLoadFromCCB {
@@ -22,7 +29,8 @@
     menuOpen = FALSE;
 }
 
--(void)play{
+-(void)play{    
+    _gameplay = [self getChildByName:@"gameplay" recursively:TRUE];
     [(Level1_1*)_gameplay play];
 }
 

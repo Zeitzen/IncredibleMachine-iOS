@@ -46,6 +46,12 @@
         if(rotating){
             [(Rotator*)_RotateCircle stop];
         }else{
+//            float scale1 = _RotateCircle.contentSize.width / _selected.contentSize.width;
+//            float scale2 = _RotateCircle.contentSize.height / _selected.contentSize.height;
+
+            _RotateCircle.scale = 1.5;
+            
+            
             _RotateCircle.visible = FALSE;
             _DashedCircle.visible = TRUE;
             _DashedCircle.position = _selected.position;
