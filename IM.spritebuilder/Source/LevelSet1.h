@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCNode.h"
+#import "CCScene.h"
 
-@interface LevelSet1 : CCNode
+@interface LevelSet1 : CCScene
 
 @end

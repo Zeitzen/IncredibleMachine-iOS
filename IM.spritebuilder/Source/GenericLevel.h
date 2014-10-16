@@ -14,6 +14,7 @@
 -(void)play;
 
 @property (nonatomic,strong)    NSMutableArray* SpriteArray;
+@property (nonatomic,strong)    NSMutableArray* MovArray;
 
 
 @end

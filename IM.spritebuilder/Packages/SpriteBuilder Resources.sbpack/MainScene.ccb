@@ -98,8 +98,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>1.2000000476837158</real>
+							<real>1.2000000476837158</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -163,7 +163,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>76</real>
+							<real>85</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>0</integer>
@@ -211,8 +211,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>167</real>
-							<real>152</real>
+							<real>102</real>
+							<real>102</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -257,7 +257,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>images/PZ_PlayButton.png</string>
+							<string>images/GUI/PZ_GUI_PlayButtonBig.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -268,7 +268,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>images/PZ_PlayButton.png</string>
+							<string>images/GUI/PZ_GUI_PlayButtonBig.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -292,7 +292,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>images/GUI/PZ_GUI_PlayButtonBig.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -311,7 +311,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>images/GUI/PZ_GUI_PlayButtonBig.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -455,6 +455,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

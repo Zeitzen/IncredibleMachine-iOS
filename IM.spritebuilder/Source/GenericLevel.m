@@ -12,6 +12,8 @@
 @implementation GenericLevel{
     CCPhysicsNode *_physicsNode;
     
+    NSMutableArray* _AuxArray;
+
     CCNode *_selected;
     
     CCNode *_DashedCircle;
@@ -26,12 +28,18 @@
     self.userInteractionEnabled = TRUE;
     _RotateCircle.visible = FALSE;
     started = FALSE;
-    
-    //we can sign up as the collision delegate of our physics node.
-    _physicsNode.collisionDelegate = self;
+
+    _AuxArray=[[NSMutableArray alloc] init];
+
     
     _SpriteArray=[[NSMutableArray alloc] init];
+    _MovArray=[[NSMutableArray alloc] init];
+
     return self;
+}
+
+-(void)didLoadFromCCB{
+    _physicsNode.collisionDelegate = self;
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
@@ -45,11 +53,12 @@
         if(rotating){
             [(Rotator*)_RotateCircle stop];
         }else{
-            //            float scale1 = _RotateCircle.contentSize.width / _selected.contentSize.width;
-            //            float scale2 = _RotateCircle.contentSize.height / _selected.contentSize.height;
-            
-            _RotateCircle.scale = 1.5;
-            
+            float scale1 = (_selected.contentSize.width * 4) /(_RotateCircle.contentSize.width);
+            float scale2 = (_selected.contentSize.height * 4) /(_RotateCircle.contentSize.height);
+            float aux = MAX(scale1,scale2);
+            _RotateCircle.scale = aux;
+            _DashedCircle.scale = aux;
+
             _RotateCircle.visible = FALSE;
             _DashedCircle.visible = TRUE;
             _DashedCircle.position = _selected.position;
@@ -119,16 +128,44 @@
 
 - (void)play {
     if(started){
-        CCScene *gameplayScene = [CCBReader loadAsScene:@"Level1_1"];
-        [[CCDirector sharedDirector] replaceScene:gameplayScene];
+        started = FALSE;
+        int i = 0;
+
+        for(CCNode* n in _SpriteArray){
+            n.physicsBody.type= CCPhysicsBodyTypeStatic;
+        }
+        
+        for(CCNode* n in _SpriteArray){
+            CGPoint aux =[[_AuxArray objectAtIndex:i] CGPointValue];
+            n.position = aux;
+            i++;
+        }
+
+        _AuxArray=[[NSMutableArray alloc] init];
+        
     }else{
+        
+        for(CCNode* n in _SpriteArray){
+            CGPoint aux = ccp(n.position.x,n.position.y);
+            [_AuxArray addObject:[NSValue valueWithCGPoint:aux]];
+        }
+        
         started=TRUE;
         _RotateCircle.visible = FALSE;
         
-        for(CCNode* c in _SpriteArray){
-            c.physicsBody.type= CCPhysicsBodyTypeDynamic;
+        for(CCNode* n in _SpriteArray){
+            n.physicsBody.type= CCPhysicsBodyTypeDynamic;
+        }
+        
+        for(CCNode* n in _MovArray){
+            n.physicsBody.type= CCPhysicsBodyTypeDynamic;
         }
     }
+}
+
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair star:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    CCLOG(@"Something collided with a star!");
 }
 
 @end

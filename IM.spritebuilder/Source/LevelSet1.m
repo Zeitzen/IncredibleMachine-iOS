@@ -19,6 +19,14 @@
     CCNode* aux = LevelFrame.children.firstObject;
     [aux addChild:gameplay z:-10];
     
+    [[CCDirector sharedDirector] pushScene:self];
+    
     [[CCDirector sharedDirector] replaceScene:LevelFrame];
 }
+
+-(void)back{
+    CCScene *gameplayScene = [CCBReader loadAsScene:@"LevelSets"];
+    [[CCDirector sharedDirector] replaceScene:gameplayScene];
+}
+
 @end
