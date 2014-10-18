@@ -15,7 +15,6 @@
 		8FC0D3CA19E7156F00683E9B /* LevelWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0D3C919E7156F00683E9B /* LevelWrapper.m */; };
 		8FC7204419E339550053A7F1 /* LevelSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7204319E339550053A7F1 /* LevelSets.m */; };
 		8FC7204819E339930053A7F1 /* LevelSet1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7204719E339930053A7F1 /* LevelSet1.m */; };
-		8FCCB21A19F06B9600233C32 /* Star.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCB21919F06B9600233C32 /* Star.m */; };
 		8FD20EFB19E625F900A5113B /* DashedCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD20EFA19E625F900A5113B /* DashedCircle.m */; };
 		8FE05F7719DD03F40069F333 /* BowBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE05F7619DD03F40069F333 /* BowBall.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
@@ -81,8 +80,6 @@
 		8FC7204319E339550053A7F1 /* LevelSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelSets.m; path = Source/LevelSets.m; sourceTree = "<group>"; };
 		8FC7204619E339930053A7F1 /* LevelSet1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSet1.h; path = Source/LevelSet1.h; sourceTree = "<group>"; };
 		8FC7204719E339930053A7F1 /* LevelSet1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelSet1.m; path = Source/LevelSet1.m; sourceTree = "<group>"; };
-		8FCCB21819F06B9600233C32 /* Star.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Star.h; path = Source/Star.h; sourceTree = "<group>"; };
-		8FCCB21919F06B9600233C32 /* Star.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Star.m; path = Source/Star.m; sourceTree = "<group>"; };
 		8FD20EF919E625F900A5113B /* DashedCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashedCircle.h; path = Source/DashedCircle.h; sourceTree = "<group>"; };
 		8FD20EFA19E625F900A5113B /* DashedCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashedCircle.m; path = Source/DashedCircle.m; sourceTree = "<group>"; };
 		8FE05F7519DD03F40069F333 /* BowBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BowBall.h; path = Source/BowBall.h; sourceTree = "<group>"; };
@@ -164,8 +161,6 @@
 				8F34126B19DD29A800A17FA6 /* Level1_1.h */,
 				8F9984DB19E7922D00B32C2E /* GenericLevel.h */,
 				8F9984DC19E7922D00B32C2E /* GenericLevel.m */,
-				8FCCB21819F06B9600233C32 /* Star.h */,
-				8FCCB21919F06B9600233C32 /* Star.m */,
 				8F34126C19DD29A800A17FA6 /* Level1_1.m */,
 				8FC0D3C819E7156F00683E9B /* LevelWrapper.h */,
 				8FC0D3C919E7156F00683E9B /* LevelWrapper.m */,
@@ -391,7 +386,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE05F7719DD03F40069F333 /* BowBall.m in Sources */,
-				8FCCB21A19F06B9600233C32 /* Star.m in Sources */,
 				8F7C1B6C19EE06520071E055 /* SideMenu.m in Sources */,
 				8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */,
 				8FC7204419E339550053A7F1 /* LevelSets.m in Sources */,

@@ -150,7 +150,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>wildcard</string>
 			<key>cornerRadius</key>
 			<real>20</real>
 			<key>density</key>

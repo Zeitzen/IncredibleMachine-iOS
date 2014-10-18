@@ -13,8 +13,15 @@
 
 -(void)play;
 
-@property (nonatomic,strong)    NSMutableArray* SpriteArray;
-@property (nonatomic,strong)    NSMutableArray* MovArray;
-
+//objetos que el usuario puede mover
+@property (nonatomic,strong)    NSMutableArray* AllMovableArray;
+//objetos que tienen fisica estatica
+@property (nonatomic,strong)    NSMutableArray* StaticArray;
+//objetos que tienen fisica dinamica
+@property (nonatomic,strong)    NSMutableArray* DynamicArray;
+// objetos con fisica dinamica que el usuario no puede mover
+@property (nonatomic,strong)    NSMutableArray* LockedDynamicArray;
+// nodo de fisica
+@property (nonatomic,strong)    CCPhysicsNode* physicsNode;
 
 @end

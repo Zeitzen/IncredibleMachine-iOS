@@ -14,13 +14,22 @@
     CCNode *_shelf2;
     CCNode* _ball1;
     CCNode* _ball2;
+    CCNode* _star1;
 }
 
 - (void)didLoadFromCCB {
-    [super.SpriteArray addObject:_shelf1];
-    [super.SpriteArray addObject:_shelf2];
-    [super.SpriteArray addObject:_ball1];
-    [super.SpriteArray addObject:_ball2];
+    [super.StaticArray addObject:_shelf1];
+    [super.StaticArray addObject:_shelf2];
+    [super.AllMovableArray addObject:_shelf1];
+    [super.AllMovableArray addObject:_shelf2];
+    
+    [super.LockedDynamicArray addObject:_ball1];
+    [super.LockedDynamicArray addObject:_ball2];
+    
+    //_star1.physicsBody.sensor = TRUE;
+    
+    [[super physicsNode] setCollisionDelegate:self];
+    
 
 }
 
