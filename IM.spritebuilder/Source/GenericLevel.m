@@ -130,30 +130,30 @@
 
 - (void)play {
     if(started){
-//        started = FALSE;
-//        int i = 0;
-//
-//        for(CCNode* n in _DynamicArray){
-//            n.physicsBody.type= CCPhysicsBodyTypeStatic;
-//        }
-//        
-//        for(CCNode* n in _LockedDynamicArray){
-//            n.physicsBody.type= CCPhysicsBodyTypeStatic;
-//        }
-//        
-//        for(CCNode* n in _DynamicArray){
-//            CGPoint aux =[[_AuxArray objectAtIndex:i] CGPointValue];
-//            n.rotation = 0;
-//            n.position = aux;
-//            i++;
-//        }
-//        
-//        for(CCNode* n in _LockedDynamicArray){
-//            CGPoint aux =[[_AuxArray objectAtIndex:i] CGPointValue];
-//            n.rotation = 0;
-//            n.position = aux;
-//            i++;
-//        }
+        started = FALSE;
+        int i = 0;
+
+        for(CCNode* n in _DynamicArray){
+            n.physicsBody.type= CCPhysicsBodyTypeStatic;
+        }
+        
+        for(CCNode* n in _LockedDynamicArray){
+            n.physicsBody.type= CCPhysicsBodyTypeStatic;
+        }
+
+        for(CCNode* n in _DynamicArray){
+            CGPoint aux =[[_AuxArray objectAtIndex:i] CGPointValue];
+            n.rotation = 0;
+            n.position = aux;
+            i++;
+        }
+        
+        for(CCNode* n in _LockedDynamicArray){
+            CGPoint aux =[[_AuxArray objectAtIndex:i] CGPointValue];
+            n.rotation = 0;
+            n.position = aux;
+            i++;
+        }
 
         _AuxArray=[[NSMutableArray alloc] init];
         

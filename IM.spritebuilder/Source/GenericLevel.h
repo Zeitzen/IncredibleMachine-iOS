@@ -13,7 +13,7 @@
 
 -(void)play;
 
-//objetos que el usuario puede mover
+//objetos que se mueven
 @property (nonatomic,strong)    NSMutableArray* AllMovableArray;
 //objetos que tienen fisica estatica
 @property (nonatomic,strong)    NSMutableArray* StaticArray;

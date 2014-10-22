@@ -23,10 +23,17 @@
     [super.AllMovableArray addObject:_shelf1];
     [super.AllMovableArray addObject:_shelf2];
     
-    [super.LockedDynamicArray addObject:_ball1];
+    
+    //[super.LockedDynamicArray addObject:_ball1];
+    
+    [super.DynamicArray addObject:_ball1];
+    [super.AllMovableArray addObject:_ball1];
+
+    
+    
     [super.LockedDynamicArray addObject:_ball2];
     
-    //_star1.physicsBody.sensor = TRUE;
+    _star1.physicsBody.sensor = TRUE;
     
     [[super physicsNode] setCollisionDelegate:self];
     

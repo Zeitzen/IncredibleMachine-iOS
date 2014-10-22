@@ -281,15 +281,15 @@
 			<key>collisionType</key>
 			<string>star</string>
 			<key>cornerRadius</key>
-			<real>7.4905562400817871</real>
+			<real>7.3322234153747559</real>
 			<key>density</key>
-			<real>0.0</real>
+			<real>1</real>
 			<key>dynamic</key>
 			<false/>
 			<key>elasticity</key>
-			<real>1</real>
+			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>0.0</real>
+			<real>0.30000001192092896</real>
 			<key>points</key>
 			<array>
 				<array>
