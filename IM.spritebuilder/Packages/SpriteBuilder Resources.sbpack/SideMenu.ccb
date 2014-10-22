@@ -140,7 +140,7 @@
 				<key>displayName</key>
 				<string>LevelName</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_Label</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -198,7 +198,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>1 - 1</string>
+							<string>1-1</string>
 							<false/>
 						</array>
 					</dict>
@@ -334,6 +334,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

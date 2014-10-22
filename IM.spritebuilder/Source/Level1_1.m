@@ -14,7 +14,6 @@
     CCNode *_shelf2;
     CCNode* _ball1;
     CCNode* _ball2;
-    CCNode* _star1;
     CCNode* _Book1;
     CCNode* _Book2;
     CCNode* _Book3;
@@ -36,7 +35,6 @@
     [super.LockedDynamicArray addObject:_ball1];
     [super.LockedDynamicArray addObject:_ball2];
     
-    _star1.physicsBody.sensor = TRUE;
     
     [[super physicsNode] setCollisionDelegate:self];
     

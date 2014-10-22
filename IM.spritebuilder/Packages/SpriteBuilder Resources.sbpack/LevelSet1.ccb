@@ -1708,6 +1708,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1779,7 +1781,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_1</string>
+											<string>level1_2</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -2914,8 +2916,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

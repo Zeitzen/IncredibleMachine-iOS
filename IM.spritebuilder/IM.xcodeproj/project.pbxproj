@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56C45A8A19F81ECB000AC083 /* Level1_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C45A8919F81ECB000AC083 /* Level1_2.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12E0AA19E605FA001D49B1 /* Rotator.m */; };
 		8F34126D19DD29A800A17FA6 /* Level1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34126C19DD29A800A17FA6 /* Level1_1.m */; };
@@ -66,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56C45A8919F81ECB000AC083 /* Level1_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_2.m; path = Source/Level1_2.m; sourceTree = "<group>"; };
+		56C45A8C19F81F76000AC083 /* Level1_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level1_2.h; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		8F12E0A919E605FA001D49B1 /* Rotator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rotator.h; path = Source/Rotator.h; sourceTree = "<group>"; };
 		8F12E0AA19E605FA001D49B1 /* Rotator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rotator.m; path = Source/Rotator.m; sourceTree = "<group>"; };
@@ -162,9 +165,11 @@
 				8FE05F7519DD03F40069F333 /* BowBall.h */,
 				8FE05F7619DD03F40069F333 /* BowBall.m */,
 				8F34126B19DD29A800A17FA6 /* Level1_1.h */,
+				8F34126C19DD29A800A17FA6 /* Level1_1.m */,
 				8F9984DB19E7922D00B32C2E /* GenericLevel.h */,
 				8F9984DC19E7922D00B32C2E /* GenericLevel.m */,
-				8F34126C19DD29A800A17FA6 /* Level1_1.m */,
+				56C45A8919F81ECB000AC083 /* Level1_2.m */,
+				56C45A8C19F81F76000AC083 /* Level1_2.h */,
 				8FC0D3C819E7156F00683E9B /* LevelWrapper.h */,
 				8FC0D3C919E7156F00683E9B /* LevelWrapper.m */,
 				8F7C1B6A19EE06520071E055 /* SideMenu.h */,
@@ -391,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE05F7719DD03F40069F333 /* BowBall.m in Sources */,
+				56C45A8A19F81ECB000AC083 /* Level1_2.m in Sources */,
 				8F7C1B6C19EE06520071E055 /* SideMenu.m in Sources */,
 				8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */,
 				8FC7204419E339550053A7F1 /* LevelSets.m in Sources */,

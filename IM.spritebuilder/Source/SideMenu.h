@@ -11,4 +11,6 @@
 
 @interface SideMenu : CCNode
 
+@property(nonatomic,strong) CCLabelTTF* Label;
+
 @end

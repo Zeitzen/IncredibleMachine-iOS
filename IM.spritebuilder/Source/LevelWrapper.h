@@ -11,6 +11,7 @@
 
 @interface LevelWrapper : CCScene
 
+@property (nonatomic,strong) CCNode* menu;
 @property (nonatomic,strong) CCNode* BlackBg;
 
 @end

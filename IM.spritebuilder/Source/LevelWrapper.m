@@ -13,6 +13,7 @@
     CCNode* _gameplay;
     CCButton* _play;
     Boolean started;
+    NSString* level;
 }
 
 -(id)init{
