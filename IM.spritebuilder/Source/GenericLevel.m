@@ -21,6 +21,12 @@
     Boolean started;
     Boolean rotating;
     
+    CCNode* _Star1;
+    CCNode* _Star2;
+    CCNode* _Star3;
+    
+    CCNode* _End;
+    
     int stars;
 }
 
@@ -38,10 +44,10 @@
     _DynamicArray=[[NSMutableArray alloc] init];
     _LockedDynamicArray=[[NSMutableArray alloc] init];
     
+    stars = 3;
 
     return self;
     
-    stars = 3;
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
@@ -129,23 +135,28 @@
 }
 
 - (void)play {
+    _selected = NULL;
     if(started){
         started = FALSE;
+        
+        [_Star1 removeFromParent];
+        [self addChild:_Star1];
+        [_Star2 removeFromParent];
+        [self addChild:_Star2];
+        [_Star3 removeFromParent];
+        [self addChild:_Star3];
+        
+        stars = 3;
+        
         int i = 0;
 
         for(CCNode* n in _DynamicArray){
+            CGPoint aux =[[_AuxArray objectAtIndex:i] CGPointValue];
+            n.rotation = 0;
+            n.position = aux;
+            i++;
             n.physicsBody.type= CCPhysicsBodyTypeStatic;
-        }
-        
-        for(CCNode* n in _LockedDynamicArray){
-            n.physicsBody.type= CCPhysicsBodyTypeStatic;
-        }
 
-        for(CCNode* n in _DynamicArray){
-            CGPoint aux =[[_AuxArray objectAtIndex:i] CGPointValue];
-            n.rotation = 0;
-            n.position = aux;
-            i++;
         }
         
         for(CCNode* n in _LockedDynamicArray){
@@ -153,6 +164,8 @@
             n.rotation = 0;
             n.position = aux;
             i++;
+            n.physicsBody.type= CCPhysicsBodyTypeStatic;
+
         }
 
         _AuxArray=[[NSMutableArray alloc] init];
@@ -184,13 +197,15 @@
 }
 
 
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair star:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
-    [nodeA removeFromParent];
-    stars --;
-    CCLOG(@"se dfsdfs la joda");
-
-    if(stars == 0)
-        CCLOG(@"se acabo la joda");
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair star:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    if(_selected == NULL){
+        [nodeA removeFromParent];
+        stars --;
+    }
+    if(stars==0){
+        _End.visible = TRUE;
+    }
+    return NO;
 }
 
 @end

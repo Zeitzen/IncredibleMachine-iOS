@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>filenames</key>
-	<dict/>
+	<dict>
+		<key>images/GUI/PZ_GUI_NextButton.psd</key>
+		<string>images/GUI/PZ_GUI_NextButton.png</string>
+	</dict>
 	<key>metadata</key>
 	<dict>
 		<key>version</key>

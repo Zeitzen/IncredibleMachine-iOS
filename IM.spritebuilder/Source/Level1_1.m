@@ -15,6 +15,10 @@
     CCNode* _ball1;
     CCNode* _ball2;
     CCNode* _star1;
+    CCNode* _Book1;
+    CCNode* _Book2;
+    CCNode* _Book3;
+    CCNode* _Book4;
 }
 
 - (void)didLoadFromCCB {
@@ -23,14 +27,13 @@
     [super.AllMovableArray addObject:_shelf1];
     [super.AllMovableArray addObject:_shelf2];
     
-    
-    //[super.LockedDynamicArray addObject:_ball1];
-    
-    [super.DynamicArray addObject:_ball1];
-    [super.AllMovableArray addObject:_ball1];
-
+    [super.LockedDynamicArray addObject:_Book1];
+    [super.LockedDynamicArray addObject:_Book2];
+    [super.LockedDynamicArray addObject:_Book3];
+    [super.LockedDynamicArray addObject:_Book4];
     
     
+    [super.LockedDynamicArray addObject:_ball1];
     [super.LockedDynamicArray addObject:_ball2];
     
     _star1.physicsBody.sensor = TRUE;

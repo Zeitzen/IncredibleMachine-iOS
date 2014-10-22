@@ -11,6 +11,7 @@
 		8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12E0AA19E605FA001D49B1 /* Rotator.m */; };
 		8F34126D19DD29A800A17FA6 /* Level1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34126C19DD29A800A17FA6 /* Level1_1.m */; };
 		8F7C1B6C19EE06520071E055 /* SideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C1B6B19EE06520071E055 /* SideMenu.m */; };
+		8F91ABA319F83CA700E53825 /* EndLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91ABA219F83CA700E53825 /* EndLevel.m */; };
 		8F9984DD19E7922D00B32C2E /* GenericLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9984DC19E7922D00B32C2E /* GenericLevel.m */; };
 		8FC0D3CA19E7156F00683E9B /* LevelWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0D3C919E7156F00683E9B /* LevelWrapper.m */; };
 		8FC7204419E339550053A7F1 /* LevelSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7204319E339550053A7F1 /* LevelSets.m */; };
@@ -72,6 +73,8 @@
 		8F34126C19DD29A800A17FA6 /* Level1_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_1.m; path = Source/Level1_1.m; sourceTree = "<group>"; };
 		8F7C1B6A19EE06520071E055 /* SideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenu.h; path = Source/SideMenu.h; sourceTree = "<group>"; };
 		8F7C1B6B19EE06520071E055 /* SideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideMenu.m; path = Source/SideMenu.m; sourceTree = "<group>"; };
+		8F91ABA119F83CA700E53825 /* EndLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EndLevel.h; path = Source/EndLevel.h; sourceTree = "<group>"; };
+		8F91ABA219F83CA700E53825 /* EndLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EndLevel.m; path = Source/EndLevel.m; sourceTree = "<group>"; };
 		8F9984DB19E7922D00B32C2E /* GenericLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericLevel.h; path = Source/GenericLevel.h; sourceTree = "<group>"; };
 		8F9984DC19E7922D00B32C2E /* GenericLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericLevel.m; path = Source/GenericLevel.m; sourceTree = "<group>"; };
 		8FC0D3C819E7156F00683E9B /* LevelWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelWrapper.h; path = Source/LevelWrapper.h; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				8FC0D3C919E7156F00683E9B /* LevelWrapper.m */,
 				8F7C1B6A19EE06520071E055 /* SideMenu.h */,
 				8F7C1B6B19EE06520071E055 /* SideMenu.m */,
+				8F91ABA119F83CA700E53825 /* EndLevel.h */,
+				8F91ABA219F83CA700E53825 /* EndLevel.m */,
 				8FC7204219E339550053A7F1 /* LevelSets.h */,
 				8FC7204319E339550053A7F1 /* LevelSets.m */,
 				8FC7204619E339930053A7F1 /* LevelSet1.h */,
@@ -390,6 +395,7 @@
 				8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */,
 				8FC7204419E339550053A7F1 /* LevelSets.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				8F91ABA319F83CA700E53825 /* EndLevel.m in Sources */,
 				8FC7204819E339930053A7F1 /* LevelSet1.m in Sources */,
 				8F34126D19DD29A800A17FA6 /* Level1_1.m in Sources */,
 				8F9984DD19E7922D00B32C2E /* GenericLevel.m in Sources */,

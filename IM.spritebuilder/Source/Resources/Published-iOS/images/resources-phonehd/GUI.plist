@@ -59,7 +59,7 @@
 		<key>images/GUI/PZ_BigStar3.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{551, 393}, {156, 167}}</string>
+			<string>{{349, 549}, {156, 167}}</string>
 			<key>offset</key>
 			<string>{1, 0}</string>
 			<key>rotated</key>
@@ -69,10 +69,10 @@
 			<key>sourceSize</key>
 			<string>{157, 167}</string>
 		</dict>
-		<key>images/GUI/PZ_BigStar3Pff.png</key>
+		<key>images/GUI/PZ_BigStar3Off.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{349, 549}, {156, 167}}</string>
+			<string>{{551, 393}, {156, 167}}</string>
 			<key>offset</key>
 			<string>{1, 0}</string>
 			<key>rotated</key>
@@ -85,11 +85,11 @@
 		<key>images/GUI/PZ_GUI_BackButton.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{937, 487}, {69, 70}}</string>
+			<string>{{349, 917}, {69, 70}}</string>
 			<key>offset</key>
 			<string>{0, -1}</string>
 			<key>rotated</key>
-			<true/>
+			<false/>
 			<key>sourceColorRect</key>
 			<string>{{0, 3}, {69, 70}}</string>
 			<key>sourceSize</key>
@@ -98,7 +98,7 @@
 		<key>images/GUI/PZ_GUI_DotsButton.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{937, 274}, {69, 70}}</string>
+			<string>{{937, 416}, {69, 70}}</string>
 			<key>offset</key>
 			<string>{0, -1}</string>
 			<key>rotated</key>
@@ -111,13 +111,26 @@
 		<key>images/GUI/PZ_GUI_LevelsButton.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{349, 845}, {69, 70}}</string>
+			<string>{{420, 845}, {69, 70}}</string>
 			<key>offset</key>
 			<string>{0, -1}</string>
 			<key>rotated</key>
 			<false/>
 			<key>sourceColorRect</key>
 			<string>{{0, 3}, {69, 70}}</string>
+			<key>sourceSize</key>
+			<string>{69, 75}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_NextButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{937, 274}, {69, 72}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 2}, {69, 72}}</string>
 			<key>sourceSize</key>
 			<string>{69, 75}</string>
 		</dict>
@@ -137,7 +150,7 @@
 		<key>images/GUI/PZ_GUI_PlayButtonSmall.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{420, 845}, {69, 70}}</string>
+			<string>{{460, 707}, {69, 70}}</string>
 			<key>offset</key>
 			<string>{0, -1}</string>
 			<key>rotated</key>
@@ -147,7 +160,33 @@
 			<key>sourceSize</key>
 			<string>{69, 75}</string>
 		</dict>
+		<key>images/GUI/PZ_GUI_ReloadButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{937, 487}, {69, 70}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 3}, {69, 70}}</string>
+			<key>sourceSize</key>
+			<string>{69, 75}</string>
+		</dict>
 		<key>images/GUI/PZ_GUI_RetryButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{937, 203}, {69, 72}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 2}, {69, 72}}</string>
+			<key>sourceSize</key>
+			<string>{69, 75}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_SoundOffButton.png</key>
 		<dict>
 			<key>frame</key>
 			<string>{{937, 345}, {69, 70}}</string>
@@ -160,23 +199,10 @@
 			<key>sourceSize</key>
 			<string>{69, 75}</string>
 		</dict>
-		<key>images/GUI/PZ_GUI_SoundOffButton.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{937, 203}, {69, 70}}</string>
-			<key>offset</key>
-			<string>{0, -1}</string>
-			<key>rotated</key>
-			<true/>
-			<key>sourceColorRect</key>
-			<string>{{0, 3}, {69, 70}}</string>
-			<key>sourceSize</key>
-			<string>{69, 75}</string>
-		</dict>
 		<key>images/GUI/PZ_GUI_SoundOnButton.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{349, 917}, {69, 70}}</string>
+			<string>{{420, 917}, {69, 70}}</string>
 			<key>offset</key>
 			<string>{0, -1}</string>
 			<key>rotated</key>
@@ -189,11 +215,11 @@
 		<key>images/GUI/PZ_GUI_StopButton.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{937, 416}, {69, 70}}</string>
+			<string>{{349, 845}, {69, 70}}</string>
 			<key>offset</key>
 			<string>{0, -1}</string>
 			<key>rotated</key>
-			<true/>
+			<false/>
 			<key>sourceColorRect</key>
 			<string>{{0, 3}, {69, 70}}</string>
 			<key>sourceSize</key>
