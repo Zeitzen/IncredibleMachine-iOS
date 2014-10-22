@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>images/GUI/PZ_BigStar1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1513, 403}, {314, 336}}</string>
+			<key>offset</key>
+			<string>{0, 1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{3, 0}, {314, 336}}</string>
+			<key>sourceSize</key>
+			<string>{320, 338}</string>
+		</dict>
+		<key>images/GUI/PZ_BigStar1Off.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1513, 719}, {314, 336}}</string>
+			<key>offset</key>
+			<string>{0, 1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{3, 0}, {314, 336}}</string>
+			<key>sourceSize</key>
+			<string>{320, 338}</string>
+		</dict>
+		<key>images/GUI/PZ_BigStar2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{341, 1703}, {344, 338}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{1, 0}, {344, 338}}</string>
+			<key>sourceSize</key>
+			<string>{348, 338}</string>
+		</dict>
+		<key>images/GUI/PZ_BigStar2Off.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1703}, {344, 338}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{1, 0}, {344, 338}}</string>
+			<key>sourceSize</key>
+			<string>{348, 338}</string>
+		</dict>
+		<key>images/GUI/PZ_BigStar3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1085, 789}, {314, 334}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {314, 334}}</string>
+			<key>sourceSize</key>
+			<string>{314, 334}</string>
+		</dict>
+		<key>images/GUI/PZ_BigStar3Pff.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{681, 1095}, {314, 334}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {314, 334}}</string>
+			<key>sourceSize</key>
+			<string>{314, 334}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_BackButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1851, 963}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_DotsButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1851, 543}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_LevelsButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{681, 1687}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_PlayButtonBig.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{681, 691}, {402, 402}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{3, 3}, {402, 402}}</string>
+			<key>sourceSize</key>
+			<string>{408, 408}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_PlayButtonSmall.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{821, 1687}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_RetryButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1851, 683}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_SoundOffButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1851, 403}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_SoundOnButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{681, 1831}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_StopButton.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1851, 823}, {138, 142}}</string>
+			<key>offset</key>
+			<string>{0, -1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 5}, {138, 142}}</string>
+			<key>sourceSize</key>
+			<string>{138, 150}</string>
+		</dict>
+		<key>images/GUI/PZ_GUI_lock.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{681, 407}, {282, 404}}</string>
+			<key>offset</key>
+			<string>{-1, 1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {282, 404}}</string>
+			<key>sourceSize</key>
+			<string>{284, 406}</string>
+		</dict>
+		<key>images/GUI/PZ_LevelFrame1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1103, 401}, {386, 408}}</string>
+			<key>offset</key>
+			<string>{0, 1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{1, 3}, {386, 408}}</string>
+			<key>sourceSize</key>
+			<string>{388, 416}</string>
+		</dict>
+		<key>images/GUI/PZ_LevelFrame2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1523, 1}, {400, 410}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{3, 3}, {400, 410}}</string>
+			<key>sourceSize</key>
+			<string>{408, 416}</string>
+		</dict>
+		<key>images/GUI/PZ_LevelFrame3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1103, 1}, {398, 418}}</string>
+			<key>offset</key>
+			<string>{0, 1}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 3}, {398, 418}}</string>
+			<key>sourceSize</key>
+			<string>{398, 426}</string>
+		</dict>
+		<key>images/GUI/PZ_LevelFrame4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{681, 1}, {404, 420}}</string>
+			<key>offset</key>
+			<string>{1, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{3, 3}, {404, 420}}</string>
+			<key>sourceSize</key>
+			<string>{408, 426}</string>
+		</dict>
+		<key>images/GUI/PZ_PlayButtonBg.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{657, 1411}, {258, 274}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {258, 274}}</string>
+			<key>sourceSize</key>
+			<string>{258, 274}</string>
+		</dict>
+		<key>images/GUI/PZ_SideMenuBg.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {654, 1700}}</string>
+			<key>offset</key>
+			<string>{-8, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {654, 1700}}</string>
+			<key>sourceSize</key>
+			<string>{670, 1700}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{2048, 2048}</string>
+		<key>textureFileName</key>
+		<string>GUI.png</string>
+	</dict>
+</dict>
+</plist>

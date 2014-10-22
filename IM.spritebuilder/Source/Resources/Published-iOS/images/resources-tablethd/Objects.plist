@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>images/Objects/PZ_BBall.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{795, 343}, {68, 66}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {68, 66}}</string>
+			<key>sourceSize</key>
+			<string>{68, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_Baloon1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 731}, {134, 188}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 188}}</string>
+			<key>sourceSize</key>
+			<string>{134, 188}</string>
+		</dict>
+		<key>images/Objects/PZ_Baloon2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 921}, {102, 98}}</string>
+			<key>offset</key>
+			<string>{-1, 8}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{15, 37}, {102, 98}}</string>
+			<key>sourceSize</key>
+			<string>{134, 188}</string>
+		</dict>
+		<key>images/Objects/PZ_Baloon3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{531, 731}, {134, 112}}</string>
+			<key>offset</key>
+			<string>{0, 9}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 29}, {134, 112}}</string>
+			<key>sourceSize</key>
+			<string>{134, 188}</string>
+		</dict>
+		<key>images/Objects/PZ_Baloon4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{353, 913}, {108, 114}}</string>
+			<key>offset</key>
+			<string>{0, 10}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{13, 27}, {108, 114}}</string>
+			<key>sourceSize</key>
+			<string>{134, 188}</string>
+		</dict>
+		<key>images/Objects/PZ_Baloon5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{567, 615}, {112, 114}}</string>
+			<key>offset</key>
+			<string>{0, 10}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{11, 27}, {112, 114}}</string>
+			<key>sourceSize</key>
+			<string>{134, 188}</string>
+		</dict>
+		<key>images/Objects/PZ_Baloon6.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{469, 913}, {112, 104}}</string>
+			<key>offset</key>
+			<string>{0, 9}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{11, 33}, {112, 104}}</string>
+			<key>sourceSize</key>
+			<string>{134, 188}</string>
+		</dict>
+		<key>images/Objects/PZ_BasketBack.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{515, 113}, {350, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {350, 166}}</string>
+			<key>sourceSize</key>
+			<string>{350, 166}</string>
+		</dict>
+		<key>images/Objects/PZ_BasketFront.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{867, 127}, {342, 150}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {342, 150}}</string>
+			<key>sourceSize</key>
+			<string>{342, 150}</string>
+		</dict>
+		<key>images/Objects/PZ_BigBox.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{515, 343}, {278, 268}}</string>
+			<key>offset</key>
+			<string>{0, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {278, 268}}</string>
+			<key>sourceSize</key>
+			<string>{278, 270}</string>
+		</dict>
+		<key>images/Objects/PZ_Book1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{515, 281}, {60, 342}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {60, 342}}</string>
+			<key>sourceSize</key>
+			<string>{60, 342}</string>
+		</dict>
+		<key>images/Objects/PZ_Book2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 453}, {70, 376}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {70, 376}}</string>
+			<key>sourceSize</key>
+			<string>{70, 376}</string>
+		</dict>
+		<key>images/Objects/PZ_Book3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 213}, {62, 392}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {62, 392}}</string>
+			<key>sourceSize</key>
+			<string>{62, 392}</string>
+		</dict>
+		<key>images/Objects/PZ_Book4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{429, 107}, {84, 416}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {84, 416}}</string>
+			<key>sourceSize</key>
+			<string>{84, 416}</string>
+		</dict>
+		<key>images/Objects/PZ_BowBall.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{863, 551}, {144, 140}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 140}}</string>
+			<key>sourceSize</key>
+			<string>{144, 140}</string>
+		</dict>
+		<key>images/Objects/PZ_Button.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{583, 867}, {120, 128}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 128}}</string>
+			<key>sourceSize</key>
+			<string>{120, 128}</string>
+		</dict>
+		<key>images/Objects/PZ_Car1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 693}, {256, 214}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {256, 214}}</string>
+			<key>sourceSize</key>
+			<string>{256, 214}</string>
+		</dict>
+		<key>images/Objects/PZ_Chair.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{451, 613}, {114, 116}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {114, 116}}</string>
+			<key>sourceSize</key>
+			<string>{114, 116}</string>
+		</dict>
+		<key>images/Objects/PZ_FBall.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 525}, {162, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {162, 166}}</string>
+			<key>sourceSize</key>
+			<string>{162, 166}</string>
+		</dict>
+		<key>images/Objects/PZ_LittleBox.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{353, 731}, {180, 176}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {180, 176}}</string>
+			<key>sourceSize</key>
+			<string>{180, 176}</string>
+		</dict>
+		<key>images/Objects/PZ_Pipe1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 277}, {378, 174}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {378, 174}}</string>
+			<key>sourceSize</key>
+			<string>{378, 174}</string>
+		</dict>
+		<key>images/Objects/PZ_Pipe2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{241, 525}, {204, 208}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {204, 208}}</string>
+			<key>sourceSize</key>
+			<string>{204, 208}</string>
+		</dict>
+		<key>images/Objects/PZ_PipeBg.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{863, 471}, {158, 78}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {158, 78}}</string>
+			<key>sourceSize</key>
+			<string>{158, 78}</string>
+		</dict>
+		<key>images/Objects/PZ_Scale.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {518, 104}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {518, 104}}</string>
+			<key>sourceSize</key>
+			<string>{518, 104}</string>
+		</dict>
+		<key>images/Objects/PZ_Shelf.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 107}, {426, 104}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {426, 104}}</string>
+			<key>sourceSize</key>
+			<string>{426, 104}</string>
+		</dict>
+		<key>images/Objects/PZ_Skate.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{521, 1}, {442, 110}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {442, 110}}</string>
+			<key>sourceSize</key>
+			<string>{442, 110}</string>
+		</dict>
+		<key>images/Objects/PZ_Star1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 951}, {66, 66}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {66, 66}}</string>
+			<key>sourceSize</key>
+			<string>{66, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_Star2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{795, 547}, {66, 66}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {66, 66}}</string>
+			<key>sourceSize</key>
+			<string>{66, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_Star3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{381, 281}, {46, 66}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {46, 66}}</string>
+			<key>sourceSize</key>
+			<string>{66, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_Star4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{395, 213}, {16, 66}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{25, 0}, {16, 66}}</string>
+			<key>sourceSize</key>
+			<string>{66, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_Star5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{965, 59}, {46, 66}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{9, 0}, {46, 66}}</string>
+			<key>sourceSize</key>
+			<string>{66, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_Star6.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{69, 951}, {64, 66}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{1, 0}, {64, 66}}</string>
+			<key>sourceSize</key>
+			<string>{66, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_TBall.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{165, 613}, {78, 74}}</string>
+			<key>offset</key>
+			<string>{-1, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {78, 74}}</string>
+			<key>sourceSize</key>
+			<string>{80, 74}</string>
+		</dict>
+		<key>images/Objects/PZ_Tampoline.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{795, 411}, {134, 66}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {134, 66}}</string>
+			<key>sourceSize</key>
+			<string>{134, 66}</string>
+		</dict>
+		<key>images/Objects/PZ_marble.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{965, 1}, {56, 56}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {56, 56}}</string>
+			<key>sourceSize</key>
+			<string>{56, 56}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+		<key>textureFileName</key>
+		<string>Objects.png</string>
+	</dict>
+</dict>
+</plist>
