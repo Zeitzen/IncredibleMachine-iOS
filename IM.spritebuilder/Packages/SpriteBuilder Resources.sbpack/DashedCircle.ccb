@@ -96,8 +96,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>0.15000000596046448</real>
+							<real>0.15000000596046448</real>
 							<false/>
 							<integer>0</integer>
 						</array>

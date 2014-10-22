@@ -10,8 +10,8 @@
 
 
 @implementation Level1_1 {
-    CCNode *_shelf1;
-    CCNode *_shelf2;
+    CCNode* _shelf1;
+    CCNode* _shelf2;
     CCNode* _ball1;
     CCNode* _ball2;
     CCNode* _Book1;
@@ -35,10 +35,12 @@
     [super.LockedDynamicArray addObject:_ball1];
     [super.LockedDynamicArray addObject:_ball2];
     
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
     [[super physicsNode] setCollisionDelegate:self];
     
-
 }
 
 
