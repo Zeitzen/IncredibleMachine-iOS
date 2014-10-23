@@ -7,13 +7,11 @@
 //
 
 #import "LevelWrapper.h"
-#import <CCActionInterval.h>
 
 @implementation LevelWrapper{
     CCNode* _gameplay;
     CCButton* _play;
     Boolean started;
-    NSString* level;
 }
 
 -(id)init{
@@ -21,26 +19,41 @@
     return [super init];
 }
 
+-(void)animate:(CCButton*) button{
+    float duration = 0.075f;
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.25f scaleY:1.25f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
+    id buttonAction = [CCActionSequence actions: scaleUp,scaleDown, nil];
+    [button runAction:buttonAction];
+}
+
+-(void) retry{
+    [self changeLevel:_levelNum levelSet:_levelSet];
+}
+
+-(void) changeLevel:(int)levelNum levelSet: (int) levelSet{
+    
+    CCSpriteFrame *startNormalImage;
+    startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_PlayButtonSmall.png"];
+    [_play setBackgroundSpriteFrame:startNormalImage forState:CCControlStateNormal];
+    started = FALSE;
+
+    CCNode *nextGameplay = [CCBReader load:[NSString stringWithFormat:@"Levels/Level%i_%i",levelSet,levelNum]];
+    nextGameplay.name=@"gameplay";
+    
+    if(_gameplay ==NULL){
+        [[self getChildByName:@"gameplay" recursively:TRUE] removeFromParent];
+    }else{
+        [_gameplay removeFromParent];
+        _gameplay = NULL;
+    }
+    [self addChild:nextGameplay z:-10];
+}
+
+
 -(void)play{
     
-    
-//    id scaleHorDown = [CCScaleTo actionWithDuration:duration 5/30.f scaleX:0.75f scaleY:1.0f];
-//    
-//    id scaleHorBouncing = [CCEaseBounceIn actionWithAction:scaleHorDown];
-//    id scaleVerDown = [CCScaleTo actionWithDuration:duration 5/30.f scaleX:1.0f scaleY:0.65f];
-//    id scaleVerBouncing = [CCEaseBounceInOut actionWithAction:scaleVerDown];
-//    
-//    id shrink = [CCSequence actions:scaleHorBouncing,scaleVerBouncing, nil];
-//    
-//    id swell = [CCScaleTo actionWithDuration: duration * 15/30.f scale:1.10f];
-//    id swellEase = [CCEaseElasticOut actionWithAction:swell];
-//    
-//    id resetScale = [CCScaleTo actionWithDuration:duration * 5/30.f scale:1.0f];
-//    id resetScaleBouncing = [CCEaseInOut actionWithAction:resetScale];
-//    
-//    id buttonAction = [CCSequence actions: shrink, swellEase, resetScaleBouncing, nil];
-//    
-//    [self runAction:buttonAction];
+    [self animate:_play];
     
     if(_gameplay==NULL)
         _gameplay = [self getChildByName:@"gameplay" recursively:TRUE];
@@ -57,7 +70,7 @@
     
     [_play setBackgroundSpriteFrame:startNormalImage forState:CCControlStateNormal];
                                        
-    [(Level1_1*)_gameplay play];
+    [(GenericLevel*)_gameplay play];
 }
 
 

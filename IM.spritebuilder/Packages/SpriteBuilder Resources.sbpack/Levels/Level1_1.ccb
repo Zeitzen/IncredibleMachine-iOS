@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>40</integer>
+	<integer>41</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -1422,8 +1422,6 @@
 								<string>Objects/Star.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1519,8 +1517,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>351.2900390625</real>
-									<real>12.803281784057617</real>
+									<real>40.739654541015625</real>
+									<real>224.66180419921875</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1538,6 +1536,14 @@
 									<false/>
 									<integer>0</integer>
 								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>rotation</string>
+								<key>type</key>
+								<string>Degrees</string>
+								<key>value</key>
+								<real>20.819091796875</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1581,8 +1587,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>432.91094970703125</real>
-									<real>12.803281784057617</real>
+									<real>440.80630493164062</real>
+									<real>222.68797302246094</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1603,11 +1609,181 @@
 							</dict>
 							<dict>
 								<key>name</key>
+								<string>rotation</string>
+								<key>type</key>
+								<string>Degrees</string>
+								<key>value</key>
+								<real>-21.923295974731445</real>
+							</dict>
+							<dict>
+								<key>name</key>
 								<string>ccbFile</string>
 								<key>type</key>
 								<string>CCBFile</string>
 								<key>value</key>
 								<string>Objects/Shelf.ccb</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>UUID</key>
+						<integer>40</integer>
+						<key>baseClass</key>
+						<string>CCSprite</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>EndGame</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>physicsBody</key>
+						<dict>
+							<key>affectedByGravity</key>
+							<true/>
+							<key>allowsRotation</key>
+							<true/>
+							<key>bodyShape</key>
+							<integer>0</integer>
+							<key>collisionCategories</key>
+							<array/>
+							<key>collisionMask</key>
+							<array/>
+							<key>collisionType</key>
+							<string>EndGame</string>
+							<key>cornerRadius</key>
+							<real>0.0</real>
+							<key>density</key>
+							<real>1</real>
+							<key>dynamic</key>
+							<false/>
+							<key>elasticity</key>
+							<real>0.30000001192092896</real>
+							<key>friction</key>
+							<real>0.30000001192092896</real>
+							<key>points</key>
+							<array>
+								<array>
+									<real>-54.492343902587891</real>
+									<real>36.284366607666016</real>
+								</array>
+								<array>
+									<real>-54.235336303710938</real>
+									<real>42.948642730712891</real>
+								</array>
+								<array>
+									<real>134.94718933105469</real>
+									<real>44.007526397705078</real>
+								</array>
+								<array>
+									<real>134.71846008300781</real>
+									<real>36.885772705078125</real>
+								</array>
+							</array>
+							<key>polygons</key>
+							<array>
+								<array>
+									<array>
+										<real>134.71846008300781</real>
+										<real>36.885772705078125</real>
+									</array>
+									<array>
+										<real>134.94718933105469</real>
+										<real>44.007526397705078</real>
+									</array>
+									<array>
+										<real>-54.235336303710938</real>
+										<real>42.948642730712891</real>
+									</array>
+									<array>
+										<real>-54.492343902587891</real>
+										<real>36.284366607666016</real>
+									</array>
+								</array>
+							</array>
+						</dict>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>visible</string>
+								<key>type</key>
+								<string>Check</string>
+								<key>value</key>
+								<false/>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>236</real>
+									<real>66</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.5</real>
+									<real>0.5</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>spriteFrame</string>
+								<key>type</key>
+								<string>SpriteFrame</string>
+								<key>value</key>
+								<array>
+									<string></string>
+									<string>images/Objects/PZ_Pipe1.png</string>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
+								</array>
 							</dict>
 						</array>
 					</dict>
@@ -1911,8 +2087,6 @@
 						<string>EndLevel.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -1985,6 +2159,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

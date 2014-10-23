@@ -7,6 +7,7 @@
 //
 
 #import "GenericLevel.h"
+#import "EndLevel.h"
 
 @interface Level1_1 : GenericLevel
 

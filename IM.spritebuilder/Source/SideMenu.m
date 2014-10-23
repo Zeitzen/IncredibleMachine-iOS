@@ -12,6 +12,10 @@
     Boolean menuOpen;
     int displacement;
     CCButton* _sound;
+    
+    CCButton* _menu;
+    CCButton* _retry;
+    CCButton* _levels;
 }
 
 - (id)init {
@@ -20,41 +24,42 @@
     return [super init];
 }
 
-- (void)update:(CCTime)delta {
-    if(menuOpen && displacement != 100){
-        self.position = ccp(self.position.x + 10,self.position.y);
-        displacement+=10;
-        ((LevelWrapper*)_parent).BlackBg.opacity+=0.05;
-    }
-    if(!menuOpen && displacement != 0){
-        self.position = ccp(self.position.x - 10,self.position.y);
-        displacement-=10;
-        ((LevelWrapper*)_parent).BlackBg.opacity-=0.05;
-        
-    }
-}
-
 -(void)menu{
-    menuOpen = !menuOpen;
+    
+    [((LevelWrapper*)_parent) animate:_menu];
+
+    float duration = 0.3f;
+    if(menuOpen){
+        [self runAction:[CCActionMoveTo actionWithDuration:duration position:ccp(54,0)]];
+        [((LevelWrapper*)_parent).BlackBg runAction:[CCActionFadeTo actionWithDuration:duration opacity:0.0f]];
+        menuOpen = FALSE;
+
+    }else{
+        [self runAction:[CCActionMoveTo actionWithDuration:duration position:ccp(150,0)]];
+        [((LevelWrapper*)_parent).BlackBg runAction:[CCActionFadeTo actionWithDuration:duration opacity:0.3f]];
+        menuOpen = TRUE;
+    }
 }
 
 -(void)retry{
-    CCNode *gameplay = [CCBReader load:@"Level1_1"];
-    gameplay.name=@"gameplay";
     
-    CCScene *LevelFrame = [CCBReader loadAsScene:@"LevelFrame"];
-    CCNode* aux = LevelFrame.children.firstObject;
-    [aux addChild:gameplay z:-10];
-    
-    [[CCDirector sharedDirector] replaceScene:LevelFrame];
+    [((LevelWrapper*)_parent) animate:_retry];
 
+    [((LevelWrapper*)_parent) retry];
 }
 
 -(void)levels{
-    [[CCDirector sharedDirector] popScene];
+    
+    [((LevelWrapper*)_parent) animate:_retry];
+    
+    [[CCDirector sharedDirector]  popScene];
 }
 
 -(void)sound{
+    
+    [((LevelWrapper*)_parent) animate:_sound];
+
+    
     CCSpriteFrame *startNormalImage;
 
     //startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_SoundOnButton.png"];

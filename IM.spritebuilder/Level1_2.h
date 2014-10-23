@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#ifndef IM_Level1_2_h
-#define IM_Level1_2_h
+#import "GenericLevel.h"
 
+@interface Level1_2 : GenericLevel
 
-#endif
+@end

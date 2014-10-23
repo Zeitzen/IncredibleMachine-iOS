@@ -10,7 +10,5 @@
 
 @interface Rotator : CCNode
 
--(void)stop;
--(void)play;
--(void)rotate:(float)rotation;
+
 @end

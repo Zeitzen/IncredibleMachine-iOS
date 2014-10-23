@@ -23,5 +23,10 @@
 @property (nonatomic,strong)    NSMutableArray* LockedDynamicArray;
 // nodo de fisica
 @property (nonatomic,strong)    CCPhysicsNode* physicsNode;
+// end
+@property (nonatomic,strong) CCNode* End;
+
+@property (assign) int stars;
+
 
 @end

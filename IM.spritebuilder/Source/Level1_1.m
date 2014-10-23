@@ -10,6 +10,7 @@
 
 
 @implementation Level1_1 {
+    int books;
     CCNode* _shelf1;
     CCNode* _shelf2;
     CCNode* _ball1;
@@ -20,6 +21,11 @@
     CCNode* _Book4;
 }
 
+-(id)init{
+    id aux = [super init];
+    books=4;
+    return aux;
+}
 - (void)didLoadFromCCB {
     [super.StaticArray addObject:_shelf1];
     [super.StaticArray addObject:_shelf2];
@@ -35,12 +41,21 @@
     [super.LockedDynamicArray addObject:_ball1];
     [super.LockedDynamicArray addObject:_ball2];
     
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
+
     [[super physicsNode] setCollisionDelegate:self];
     
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Book:(CCNode *)nodeA EndGame:(CCNode *)nodeB {
+    books--;
+        
+    if(books==0){
+        super.End.visible = TRUE;
+        [((EndLevel*)super.End) showStars: (3 - super.stars)];
+        
+        books = 4;
+    }
+    return NO;
 }
 
 

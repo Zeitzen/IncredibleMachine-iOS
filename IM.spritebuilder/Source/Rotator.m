@@ -8,35 +8,18 @@
 
 #import "Rotator.h"
 
-@implementation Rotator{
-    CGFloat gameTime;
-    Boolean rotate;
-    float displacement;
-}
+@implementation Rotator
 
-- (void)didLoadFromCCB {
-    rotate = TRUE;
-    displacement = 0;
-}
-
-- (void)update:(CCTime)delta {
-    if(rotate){
-        gameTime += delta;
-        self.rotation = sin(gameTime) * 30 + displacement;
-    }
-}
-
--(void) stop {
-    rotate = FALSE;
-}
-
--(void) play {
-    displacement = self.rotation;
-    rotate = TRUE;
-}
-
--(void)rotate:(float)rotation{
-    self.rotation=rotation;
+-(id)init{
+    id aux = [super init];
+    
+    float duration = 1.5f;
+    id rotUp = [CCActionRotateBy actionWithDuration:duration angle:30.0f ];
+    id rotDown = [CCActionRotateBy actionWithDuration:duration angle:-30.0f ];
+    id action = [CCActionSequence actions: rotUp,rotDown, nil];
+    
+    [self runAction:[CCActionRepeatForever actionWithAction:action]];
+    return aux;
 }
 
 @end

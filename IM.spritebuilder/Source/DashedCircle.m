@@ -10,8 +10,13 @@
 
 @implementation DashedCircle
 
-- (void)update:(CCTime)delta {
-    self.rotation = self.rotation + 1;
+-(id)init{
+    id aux = [super init];
+    
+    float duration = 1.5f;
+    id rotUp = [CCActionRotateBy actionWithDuration:duration angle:30.0f ];
+    [self runAction:[CCActionRepeatForever actionWithAction:rotUp]];
+    return aux;
 }
 
 @end

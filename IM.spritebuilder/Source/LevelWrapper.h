@@ -7,10 +7,19 @@
 //
 
 #import "CCScene.h"
-#import "Level1_1.h"
+#import "GenericLevel.h"
 
 @interface LevelWrapper : CCScene
 
+
+-(void) retry;
+
+-(void) changeLevel:(int)levelNum levelSet: (int) levelSet;
+    
+-(void) animate:(CCButton*) button;
+
+@property (assign) int levelNum;
+@property (assign) int levelSet;
 @property (nonatomic,strong) CCNode* menu;
 @property (nonatomic,strong) CCNode* BlackBg;
 

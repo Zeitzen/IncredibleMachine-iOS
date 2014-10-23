@@ -334,8 +334,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -349,7 +347,7 @@
 				<key>displayName</key>
 				<string>Dots</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_menu</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -706,7 +704,7 @@
 				<key>displayName</key>
 				<string>Retry</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_retry</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1029,8 +1027,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1044,7 +1040,7 @@
 				<key>displayName</key>
 				<string>Levels</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_levels</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1683,6 +1679,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

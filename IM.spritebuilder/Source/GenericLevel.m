@@ -24,10 +24,6 @@
     CCNode* _Star1;
     CCNode* _Star2;
     CCNode* _Star3;
-    
-    CCNode* _End;
-    
-    int stars;
 }
 
 -(id)init{
@@ -44,7 +40,7 @@
     _DynamicArray=[[NSMutableArray alloc] init];
     _LockedDynamicArray=[[NSMutableArray alloc] init];
     
-    stars = 3;
+    _stars = 3;
 
     return self;
     
@@ -58,9 +54,7 @@
     [self CheckObj:touch.locationInWorld];
     
     if(_selected != NULL){
-        if(rotating){
-            [(Rotator*)_RotateCircle stop];
-        }else{
+        if(!rotating){
             float scale1 = (_selected.contentSize.width * 4) /(_RotateCircle.contentSize.width);
             float scale2 = (_selected.contentSize.height * 4) /(_RotateCircle.contentSize.height);
             float aux = MAX(scale1,scale2);
@@ -89,7 +83,6 @@
         angleRadians = CC_RADIANS_TO_DEGREES(angleRadians);
         angleRadians = -angleRadians + 45;
         _selected.rotation=angleRadians;
-        [(Rotator*)_RotateCircle rotate:angleRadians];
     }else{
         _selected.position = touchLocation;
         _DashedCircle.position = _selected.position;
@@ -101,9 +94,7 @@
     if(started )
         return;
     
-    if(rotating){
-        [(Rotator*)_RotateCircle play];
-    }else{
+    if(!rotating){
         _DashedCircle.visible = FALSE;
         _RotateCircle.visible = TRUE;
         _RotateCircle.position = _selected.position;
@@ -137,6 +128,8 @@
 - (void)play {
     _selected = NULL;
     if(started){
+        
+        _End.visible = FALSE;
         started = FALSE;
         
         [_Star1 removeFromParent];
@@ -146,7 +139,7 @@
         [_Star3 removeFromParent];
         [self addChild:_Star3];
         
-        stars = 3;
+        _stars = 3;
         
         int i = 0;
 
@@ -171,6 +164,7 @@
         _AuxArray=[[NSMutableArray alloc] init];
         
     }else{
+
         
         for(CCNode* n in _DynamicArray){
             CGPoint aux = ccp(n.position.x,n.position.y);
@@ -200,11 +194,9 @@
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair star:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
     if(_selected == NULL){
         [nodeA removeFromParent];
-        stars --;
+        _stars --;
     }
-    if(stars==0){
-        _End.visible = TRUE;
-    }
+    
     return NO;
 }
 

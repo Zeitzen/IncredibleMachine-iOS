@@ -7,7 +7,11 @@
 //
 
 #import "CCNode.h"
+#import "LevelWrapper.h"
 
 @interface EndLevel : CCNode
+
+
+-(void) showStars: (int) stars;
 
 @end
