@@ -21,22 +21,24 @@
 -(void) showStars: (int) stars{
     CCLOG(@"%i",stars);
 
-    if(stars >=1)
-        [self showStar:_StarOn1];
-    if(stars >=2)
-        [self showStar:_StarOn2];
-    if(stars >=3)
-        [self showStar:_StarOn3];
-}
-
--(void)showStar:(CCNode*) button{
-    
-    float duration = 0.1f;
+    float duration = 0.075f;
+    id delay = [CCActionDelay actionWithDuration:0.5f];
     id show = [CCActionFadeTo actionWithDuration:0 opacity:1 ];
     id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:0.8f scaleY:0.8f];
     id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:0.7f scaleY:0.7f];
-    id buttonAction = [CCActionSequence actions: show,scaleUp,scaleDown, nil];
-    [button runAction:buttonAction];
+    
+    if(stars >=1){
+        id buttonAction = [CCActionSequence actions: show,scaleUp,scaleDown, nil];
+        [_StarOn1 runAction:buttonAction];
+    }
+    if(stars >=2){
+        id buttonAction = [CCActionSequence actions: delay,show,scaleUp,scaleDown, nil];
+        [_StarOn2 runAction:buttonAction];
+    }
+    if(stars ==3){
+        id buttonAction = [CCActionSequence actions: delay,delay,show,scaleUp,scaleDown, nil];
+        [_StarOn3 runAction:buttonAction];
+    }
 }
 
 - (void) next{

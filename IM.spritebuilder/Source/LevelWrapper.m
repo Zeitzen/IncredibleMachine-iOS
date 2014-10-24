@@ -32,6 +32,11 @@
 }
 
 -(void) changeLevel:(int)levelNum levelSet: (int) levelSet{
+    _levelSet = levelSet;
+    _levelNum = levelNum;
+    
+    [[(SideMenu*)_menu Label] setString: [NSString stringWithFormat:@"%i - %i",levelSet,levelNum]];
+
     
     CCSpriteFrame *startNormalImage;
     startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_PlayButtonSmall.png"];

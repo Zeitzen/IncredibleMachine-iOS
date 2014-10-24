@@ -1,13 +1,13 @@
 //
-//  Level1_2.h
+//  Level1_8.h
 //  IM
 //
-//  Created by Elisa Cohen on 22/10/14.
+//  Created by Damian Rizzotto on 24/10/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
 #import "GenericLevel.h"
 
-@interface Level1_2 : GenericLevel
+@interface Level1_8 : GenericLevel
 
 @end

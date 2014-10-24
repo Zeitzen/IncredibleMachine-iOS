@@ -8,7 +8,7 @@
 
 #import "CCScene.h"
 #import "GenericLevel.h"
-
+#import "SideMenu.h"
 @interface LevelWrapper : CCScene
 
 

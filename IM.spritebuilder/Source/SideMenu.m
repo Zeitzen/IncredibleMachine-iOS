@@ -44,7 +44,7 @@
 -(void)retry{
     
     [((LevelWrapper*)_parent) animate:_retry];
-
+    [self menu];
     [((LevelWrapper*)_parent) retry];
 }
 
