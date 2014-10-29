@@ -10,7 +10,6 @@
 
 @implementation LevelWrapper{
     CCNode* _gameplay;
-    CCButton* _play;
     Boolean started;
 }
 
@@ -27,6 +26,20 @@
     [button runAction:buttonAction];
 }
 
+-(void) showPlay{
+    id move = [CCActionMoveBy actionWithDuration:0.4f position:ccp(55,0)];
+    [_playBg runAction:move];
+    id move2 = [CCActionMoveBy actionWithDuration:0.4f position:ccp(55,0)];
+    [_playButton runAction:move2];
+}
+
+-(void) hidePlay{
+    id move = [CCActionMoveBy actionWithDuration:0.4f position:ccp(-55,0)];
+    [_playBg runAction:move];
+    id move2 = [CCActionMoveBy actionWithDuration:0.4f position:ccp(-55,0)];
+    [_playButton runAction:move2];
+}
+
 -(void) retry{
     [self changeLevel:_levelNum levelSet:_levelSet];
 }
@@ -36,11 +49,10 @@
     _levelNum = levelNum;
     
     [[(SideMenu*)_menu Label] setString: [NSString stringWithFormat:@"%i - %i",levelSet,levelNum]];
-
     
     CCSpriteFrame *startNormalImage;
     startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_PlayButtonSmall.png"];
-    [_play setBackgroundSpriteFrame:startNormalImage forState:CCControlStateNormal];
+    [_playButton setBackgroundSpriteFrame:startNormalImage forState:CCControlStateNormal];
     started = FALSE;
 
     CCNode *nextGameplay = [CCBReader load:[NSString stringWithFormat:@"Levels/Level%i_%i",levelSet,levelNum]];
@@ -58,7 +70,7 @@
 
 -(void)play{
     
-    [self animate:_play];
+    [self animate:_playButton];
     
     if(_gameplay==NULL)
         _gameplay = [self getChildByName:@"gameplay" recursively:TRUE];
@@ -66,14 +78,16 @@
     CCSpriteFrame *startNormalImage;
     
     if(started){
+        [_menu runAction:[CCActionMoveBy actionWithDuration:0.5f position:ccp(50,0)]];
         startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_PlayButtonSmall.png"];
         started = FALSE;
     }else{
+        [_menu runAction:[CCActionMoveBy actionWithDuration:0.5f position:ccp(-50,0)]];
         startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_StopButton.png"];
         started = TRUE;
     }
     
-    [_play setBackgroundSpriteFrame:startNormalImage forState:CCControlStateNormal];
+    [_playButton setBackgroundSpriteFrame:startNormalImage forState:CCControlStateNormal];
                                        
     [(GenericLevel*)_gameplay play];
 }

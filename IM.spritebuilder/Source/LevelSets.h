@@ -10,4 +10,8 @@
 
 @interface LevelSets : CCNode
 
+@property (nonatomic,strong) CCNode* back;
+@property (nonatomic,strong) CCNode* set1;
+@property (nonatomic,strong) CCNode* set2;
+
 @end

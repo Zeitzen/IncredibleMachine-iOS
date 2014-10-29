@@ -897,8 +897,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>312.88018798828125</real>
-									<real>232.85968017578125</real>
+									<real>312.89999389648438</real>
+									<real>231.89999389648438</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -960,7 +960,7 @@
 								<key>value</key>
 								<array>
 									<real>178.44573974609375</real>
-									<real>234.46009826660156</real>
+									<real>233.5</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1022,7 +1022,7 @@
 								<key>value</key>
 								<array>
 									<real>325.68350219726562</real>
-									<real>235.26031494140625</real>
+									<real>234.30000305175781</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1050,6 +1050,8 @@
 								<string>Objects/Book3.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1084,7 +1086,7 @@
 								<key>value</key>
 								<array>
 									<real>165.64247131347656</real>
-									<real>236.8607177734375</real>
+									<real>235.89999389648438</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2159,8 +2161,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

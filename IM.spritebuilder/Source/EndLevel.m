@@ -12,12 +12,30 @@
     CCNode* _StarOn1;
     CCNode* _StarOn2;
     CCNode* _StarOn3;
+    
+    CCNode* _levels;
+    CCNode* _retry;
+    CCNode* _next;
 }
 
 -(void)levels{
+    float duration = 0.075f;
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.25f scaleY:1.25f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
+    id call = [CCActionCallFunc actionWithTarget:self selector:@selector(goLevels)];
+    id buttonAction = [CCActionSequence actions: scaleUp,scaleDown, call, nil];
+    [_levels runAction:buttonAction];
+}
+-(void)goLevels{
     [[CCDirector sharedDirector] popScene];
 }
 
+-(void) cleanStars{
+    _StarOn1.opacity =0;
+    _StarOn2.opacity =0;
+    _StarOn3.opacity =0;
+
+}
 -(void) showStars: (int) stars{
     CCLOG(@"%i",stars);
 
@@ -42,12 +60,20 @@
 }
 
 - (void) next{
+    float duration = 0.075f;
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.25f scaleY:1.25f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
+    id call = [CCActionCallFunc actionWithTarget:self selector:@selector(goNext)];
+    id buttonAction = [CCActionSequence actions: scaleUp,scaleDown, call, nil];
+    [_next runAction:buttonAction];
+}
+
+-(void) goNext{
     LevelWrapper* lr = ((LevelWrapper*)_parent.parent);
     int levelNum = lr.levelNum;
     int levelSet = lr.levelSet;
-    
     levelNum++;
-    
+    lr.menu.position = ccp(54,0);
     if(levelNum == 8){
         levelNum = 1;
         levelSet++;
@@ -61,6 +87,14 @@
 }
 
 - (void) retry{
+    float duration = 0.075f;
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.25f scaleY:1.25f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
+    id call = [CCActionCallFunc actionWithTarget:self selector:@selector(goRetry)];
+    id buttonAction = [CCActionSequence actions: scaleUp,scaleDown, call, nil];
+    [_retry runAction:buttonAction];
+}
+- (void) goRetry{
     [((LevelWrapper*)_parent.parent) retry];
 }
 

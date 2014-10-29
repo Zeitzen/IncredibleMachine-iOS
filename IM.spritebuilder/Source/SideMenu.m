@@ -30,11 +30,13 @@
 
     float duration = 0.3f;
     if(menuOpen){
+        [((LevelWrapper*)_parent) showPlay];
         [self runAction:[CCActionMoveTo actionWithDuration:duration position:ccp(54,0)]];
         [((LevelWrapper*)_parent).BlackBg runAction:[CCActionFadeTo actionWithDuration:duration opacity:0.0f]];
         menuOpen = FALSE;
 
     }else{
+        [((LevelWrapper*)_parent) hidePlay];
         [self runAction:[CCActionMoveTo actionWithDuration:duration position:ccp(150,0)]];
         [((LevelWrapper*)_parent).BlackBg runAction:[CCActionFadeTo actionWithDuration:duration opacity:0.3f]];
         menuOpen = TRUE;
@@ -43,15 +45,27 @@
 
 -(void)retry{
     
-    [((LevelWrapper*)_parent) animate:_retry];
-    [self menu];
-    [((LevelWrapper*)_parent) retry];
+    float duration = 0.075f;
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.25f scaleY:1.25f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
+    id call = [CCActionCallFunc actionWithTarget:self selector:@selector(menu)];
+    id call2 = [CCActionCallFunc actionWithTarget:((LevelWrapper*)_parent) selector:@selector(retry)];
+    id buttonAction = [CCActionSequence actions: scaleUp,scaleDown, call, call2, nil];
+    [_retry runAction:buttonAction];
 }
 
 -(void)levels{
     
-    [((LevelWrapper*)_parent) animate:_retry];
-    
+    float duration = 0.075f;
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.25f scaleY:1.25f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
+    id call = [CCActionCallFunc actionWithTarget:self selector:@selector(pop)];
+    id delay = [CCActionDelay actionWithDuration:0.2f];
+    id buttonAction = [CCActionSequence actions: scaleUp,scaleDown,delay, call, nil];
+    [_levels runAction:buttonAction];
+}
+
+-(void) pop{
     [[CCDirector sharedDirector]  popScene];
 }
 

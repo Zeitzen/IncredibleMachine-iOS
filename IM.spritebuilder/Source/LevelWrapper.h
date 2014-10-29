@@ -18,6 +18,14 @@
     
 -(void) animate:(CCButton*) button;
 
+-(void) play;
+
+-(void) hidePlay;
+
+-(void) showPlay;
+
+@property (nonatomic,strong) CCButton* playButton;
+@property (nonatomic,strong) CCNode* playBg;
 @property (assign) int levelNum;
 @property (assign) int levelSet;
 @property (nonatomic,strong) CCNode* menu;

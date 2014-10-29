@@ -10,4 +10,5 @@
 
 @interface MainScene : CCNode
 
+@property (nonatomic,strong) CCButton* Button;
 @end

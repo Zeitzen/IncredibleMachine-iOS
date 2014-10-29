@@ -130,6 +130,9 @@
     if(started){
         
         _End.visible = FALSE;
+        
+        [((EndLevel*)_End) cleanStars];
+        
         started = FALSE;
         
         [_Star1 removeFromParent];

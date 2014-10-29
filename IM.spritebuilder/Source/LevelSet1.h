@@ -10,4 +10,6 @@
 
 @interface LevelSet1 : CCScene
 
+- (void)loadLevel: (int) levelNum  levelSet: (int) levelSet;
+
 @end

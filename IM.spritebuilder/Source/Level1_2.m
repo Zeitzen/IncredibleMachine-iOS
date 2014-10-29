@@ -9,13 +9,25 @@
 #import "Level1_2.h"
 
 @implementation Level1_2 {
-
+    CCNode* _fball;
+    CCNode* _shelf1;
 }
 
 - (void)didLoadFromCCB {
+    [super.StaticArray addObject:_shelf1];
+    [super.AllMovableArray addObject:_shelf1];
+    
+    [super.LockedDynamicArray addObject:_fball];
     
     [[super physicsNode] setCollisionDelegate:self];
 }
 
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair EndGame:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+
+    super.End.visible = TRUE;
+    [((EndLevel*)super.End) showStars: (3 - super.stars)];
+
+    return NO;
+}
 
 @end

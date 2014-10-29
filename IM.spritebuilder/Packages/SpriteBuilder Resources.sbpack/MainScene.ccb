@@ -142,7 +142,7 @@
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_Button</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -268,7 +268,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>images/GUI/PZ_GUI_PlayButtonBig.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -292,7 +292,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>images/GUI/PZ_GUI_PlayButtonBig.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -311,7 +311,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>images/GUI/PZ_GUI_PlayButtonBig.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>

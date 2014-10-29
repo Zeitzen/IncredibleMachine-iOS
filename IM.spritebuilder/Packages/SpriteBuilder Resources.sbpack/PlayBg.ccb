@@ -18,7 +18,7 @@
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>docDimensionsType</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>fileType</key>
 	<string>CocosBuilder</string>
 	<key>fileVersion</key>
@@ -49,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>PZ_Shelf</string>
+				<string>PZ_PlayButtonBg</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -85,8 +85,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>1</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>images/Objects/PZ_Shelf.png</string>
+							<string>images/GUI/PZ_PlayButtonBg.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -127,6 +127,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -137,175 +139,6 @@
 		<string></string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
-		<key>physicsBody</key>
-		<dict>
-			<key>affectedByGravity</key>
-			<true/>
-			<key>allowsRotation</key>
-			<true/>
-			<key>bodyShape</key>
-			<integer>0</integer>
-			<key>collisionCategories</key>
-			<array/>
-			<key>collisionMask</key>
-			<array/>
-			<key>collisionType</key>
-			<string></string>
-			<key>cornerRadius</key>
-			<real>0.0</real>
-			<key>density</key>
-			<real>1</real>
-			<key>dynamic</key>
-			<false/>
-			<key>elasticity</key>
-			<real>0.80000001192092896</real>
-			<key>friction</key>
-			<real>0.30000001192092896</real>
-			<key>points</key>
-			<array>
-				<array>
-					<real>-3.0812957286834717</real>
-					<real>-2.6769144535064697</real>
-				</array>
-				<array>
-					<real>-3.226560115814209</real>
-					<real>13.377397537231445</real>
-				</array>
-				<array>
-					<real>-10.155154228210449</real>
-					<real>14.124471664428711</real>
-				</array>
-				<array>
-					<real>-10.531285285949707</real>
-					<real>20.534263610839844</real>
-				</array>
-				<array>
-					<real>92.647933959960938</real>
-					<real>20.534263610839844</real>
-				</array>
-				<array>
-					<real>92.647933959960938</real>
-					<real>12.422802925109863</real>
-				</array>
-				<array>
-					<real>84.824409484863281</real>
-					<real>12.394268989562988</real>
-				</array>
-				<array>
-					<real>84.191490173339844</real>
-					<real>-2.4745817184448242</real>
-				</array>
-				<array>
-					<real>75.991836547851562</real>
-					<real>-2.9648492336273193</real>
-				</array>
-				<array>
-					<real>75.211036682128906</real>
-					<real>11.701668739318848</real>
-				</array>
-				<array>
-					<real>5.0301656723022461</real>
-					<real>11.701668739318848</real>
-				</array>
-				<array>
-					<real>5.0301656723022461</real>
-					<real>-2.7625164985656738</real>
-				</array>
-			</array>
-			<key>polygons</key>
-			<array>
-				<array>
-					<array>
-						<real>-3.226560115814209</real>
-						<real>13.377397537231445</real>
-					</array>
-					<array>
-						<real>-3.0812957286834717</real>
-						<real>-2.6769144535064697</real>
-					</array>
-					<array>
-						<real>5.0301656723022461</real>
-						<real>-2.7625164985656738</real>
-					</array>
-					<array>
-						<real>5.0301656723022461</real>
-						<real>11.701668739318848</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>75.211036682128906</real>
-						<real>11.701668739318848</real>
-					</array>
-					<array>
-						<real>75.991836547851562</real>
-						<real>-2.9648492336273193</real>
-					</array>
-					<array>
-						<real>84.191490173339844</real>
-						<real>-2.4745817184448242</real>
-					</array>
-					<array>
-						<real>84.824409484863281</real>
-						<real>12.394268989562988</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>84.824409484863281</real>
-						<real>12.394268989562988</real>
-					</array>
-					<array>
-						<real>92.647933959960938</real>
-						<real>12.422802925109863</real>
-					</array>
-					<array>
-						<real>92.647933959960938</real>
-						<real>20.534263610839844</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>-10.531285285949707</real>
-						<real>20.534263610839844</real>
-					</array>
-					<array>
-						<real>-10.155154228210449</real>
-						<real>14.124471664428711</real>
-					</array>
-					<array>
-						<real>-3.226560115814209</real>
-						<real>13.377397537231445</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>-3.226560115814209</real>
-						<real>13.377397537231445</real>
-					</array>
-					<array>
-						<real>5.0301656723022461</real>
-						<real>11.701668739318848</real>
-					</array>
-					<array>
-						<real>75.211036682128906</real>
-						<real>11.701668739318848</real>
-					</array>
-					<array>
-						<real>84.824409484863281</real>
-						<real>12.394268989562988</real>
-					</array>
-					<array>
-						<real>92.647933959960938</real>
-						<real>20.534263610839844</real>
-					</array>
-					<array>
-						<real>-10.531285285949707</real>
-						<real>20.534263610839844</real>
-					</array>
-				</array>
-			</array>
-		</dict>
 		<key>properties</key>
 		<array>
 			<dict>
@@ -337,10 +170,10 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>80</real>
-					<real>20</real>
-					<integer>0</integer>
-					<integer>0</integer>
+					<real>1</real>
+					<real>1</real>
+					<integer>2</integer>
+					<integer>2</integer>
 				</array>
 			</dict>
 			<dict>
@@ -368,8 +201,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -381,13 +212,13 @@
 			<key>ext</key>
 			<string>phone</string>
 			<key>height</key>
-			<integer>0</integer>
+			<integer>320</integer>
 			<key>name</key>
-			<string>Phone</string>
+			<string>Phone Landscape</string>
 			<key>scale</key>
 			<real>1</real>
 			<key>width</key>
-			<integer>0</integer>
+			<integer>568</integer>
 		</dict>
 		<dict>
 			<key>centeredOrigin</key>
@@ -395,13 +226,27 @@
 			<key>ext</key>
 			<string>tablet phonehd</string>
 			<key>height</key>
-			<integer>0</integer>
+			<integer>384</integer>
 			<key>name</key>
-			<string>Tablet</string>
+			<string>Tablet Landscape</string>
 			<key>scale</key>
 			<real>2</real>
 			<key>width</key>
-			<integer>0</integer>
+			<integer>512</integer>
+		</dict>
+		<dict>
+			<key>centeredOrigin</key>
+			<false/>
+			<key>ext</key>
+			<string>phone</string>
+			<key>height</key>
+			<integer>320</integer>
+			<key>name</key>
+			<string>Phone Landscape (short)</string>
+			<key>scale</key>
+			<real>1</real>
+			<key>width</key>
+			<integer>480</integer>
 		</dict>
 	</array>
 	<key>sequences</key>
@@ -444,8 +289,8 @@
 		</dict>
 	</array>
 	<key>stageBorder</key>
-	<integer>3</integer>
+	<integer>0</integer>
 	<key>stageColor</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

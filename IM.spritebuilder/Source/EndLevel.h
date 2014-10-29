@@ -14,4 +14,6 @@
 
 -(void) showStars: (int) stars;
 
+-(void) cleanStars;
+
 @end
