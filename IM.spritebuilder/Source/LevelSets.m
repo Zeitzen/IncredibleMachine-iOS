@@ -8,7 +8,38 @@
 
 #import "LevelSets.h"
 
-@implementation LevelSets
+@implementation LevelSets{
+    CCLabelTTF* _score1;
+    CCLabelTTF* _score2;
+    CCLabelTTF* _scoreTotal;
+}
+
+-(void)onEnter{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSMutableArray* set1 = [[defaults arrayForKey:@"set1"] mutableCopy ];
+    NSMutableArray* set2 = [[defaults arrayForKey:@"set2"] mutableCopy ];
+    
+    int count1=0;
+    int count2=0;
+    int total=0;
+    
+    for(int i=0; i<8; i++){
+        int aux1=[[set1 objectAtIndex:i] integerValue];
+        int aux2=[[set2 objectAtIndex:i] integerValue];
+        count1 +=aux1;
+        count2 +=aux2;
+        total += aux1 + aux2;
+    }
+    
+    [_score1 setString:[NSString stringWithFormat:@"%i/24",count1]];
+    [_score2 setString:[NSString stringWithFormat:@"%i/24",count2]];
+    [_scoreTotal setString:[NSString stringWithFormat:@"%i",total]];
+
+    [super onEnter];
+
+}
 
 - (void)set_1 {
     

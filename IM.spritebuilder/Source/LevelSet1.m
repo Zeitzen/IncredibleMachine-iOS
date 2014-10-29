@@ -7,8 +7,7 @@
 //
 
 #import "LevelSet1.h"
-#import "LevelWrapper.h"
-#import "SideMenu.h"
+
 
 @implementation LevelSet1{
     CCNode* _L1;
@@ -20,6 +19,32 @@
     CCNode* _L7;
     CCNode* _L8;
     CCNode* _back;
+    
+    LevelStars* _S1;
+    LevelStars* _S2;
+    LevelStars* _S3;
+    LevelStars* _S4;
+    LevelStars* _S5;
+    LevelStars* _S6;
+    LevelStars* _S7;
+    LevelStars* _S8;
+}
+
+-(void)onEnter{
+    [super onEnter];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+    NSMutableArray* save = [[defaults arrayForKey:@"set1"] mutableCopy];
+    
+    [_S1 showStars:[[save objectAtIndex:0] integerValue]];
+    [_S2 showStars:[[save objectAtIndex:1] integerValue]];
+    [_S3 showStars:[[save objectAtIndex:2] integerValue]];
+    [_S4 showStars:[[save objectAtIndex:3] integerValue]];
+    [_S5 showStars:[[save objectAtIndex:4] integerValue]];
+    [_S6 showStars:[[save objectAtIndex:5] integerValue]];
+    [_S7 showStars:[[save objectAtIndex:6] integerValue]];
+    [_S8 showStars:[[save objectAtIndex:7] integerValue]];
 }
 
 - (void)loadLevel: (int) levelNum  levelSet: (int) levelSet {
@@ -44,44 +69,50 @@
     [[CCDirector sharedDirector] replaceScene:LevelFrame];
 }
 
--(void)animateAndCall:(CCNode*) n levelnum: (int) lnum levelset: (int) lset{
+-(void)animateAndCall:(CCNode*) n star: (CCNode*) star levelnum: (int) lnum levelset: (int) lset{
     float duration = 0.075f;
-    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
-    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:0.7f scaleY:0.7f];
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.2f scaleY:1.2f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
     id call = [CCActionCallBlock actionWithBlock:^{ [self loadLevel:lnum levelSet:lset]; }];
+    
     id buttonAction = [CCActionSequence actions: scaleUp,scaleDown, call, nil];
+    id starAction = [CCActionSequence actions: scaleUp,scaleDown, nil];
+
     [n runAction:buttonAction];
+    
+    [star runAction:starAction];
 }
+
 - (void)level1_1 {
-    [self animateAndCall:_L1 levelnum:1 levelset:1];
+    [self animateAndCall:_L1 star:_S1 levelnum:1 levelset:1];
 }
 
 - (void)level1_2 {
-    [self animateAndCall:_L2 levelnum:2 levelset:1];
+    [self animateAndCall:_L2 star:_S2 levelnum:2 levelset:1];
 }
 
 - (void)level1_3 {
-    [self animateAndCall:_L3 levelnum:3 levelset:1];
+    [self animateAndCall:_L3 star:_S3 levelnum:3 levelset:1];
 }
 
 - (void)level1_4 {
-    [self animateAndCall:_L4 levelnum:4 levelset:1];
+    [self animateAndCall:_L4 star:_S4 levelnum:4 levelset:1];
 }
 
 - (void)level1_5 {
-    [self animateAndCall:_L5 levelnum:5 levelset:1];
+    [self animateAndCall:_L5 star:_S5 levelnum:5 levelset:1];
 }
 
 - (void)level1_6 {
-    [self animateAndCall:_L6 levelnum:6 levelset:1];
+    [self animateAndCall:_L6 star:_S6 levelnum:6 levelset:1];
 }
 
 - (void)level1_7 {
-    [self animateAndCall:_L7 levelnum:7 levelset:1];
+    [self animateAndCall:_L7 star:_S7 levelnum:7 levelset:1];
 }
 
 - (void)level1_8 {
-    [self animateAndCall:_L8 levelnum:8 levelset:1];
+    [self animateAndCall:_L8 star:_S8 levelnum:8 levelset:1];
 }
 
 

@@ -37,13 +37,36 @@
 
 }
 -(void) showStars: (int) stars{
-    CCLOG(@"%i",stars);
 
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+    LevelWrapper* lr = ((LevelWrapper*)_parent.parent);
+    int lnum = lr.levelNum;
+    int lset = lr.levelSet;
+    
+    NSMutableArray* save;
+    if(lset==1)
+        save = [[defaults arrayForKey:@"set1"] mutableCopy];
+    else
+        save = [[defaults arrayForKey:@"set2"] mutableCopy];
+    
+    if( stars > [[save objectAtIndex:(lnum-1)] integerValue]){
+        [save insertObject:[NSNumber numberWithInt:stars] atIndex:(lnum-1) ];
+    }
+
+    if(lset==1)
+        [defaults setObject:save forKey:@"set1"];
+    else
+        [defaults setObject:save forKey:@"set2"];
+    
+    [defaults synchronize];
+
+    
     float duration = 0.075f;
     id delay = [CCActionDelay actionWithDuration:0.5f];
     id show = [CCActionFadeTo actionWithDuration:0 opacity:1 ];
-    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:0.8f scaleY:0.8f];
-    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:0.7f scaleY:0.7f];
+    id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.1f scaleY:1.1f];
+    id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
     
     if(stars >=1){
         id buttonAction = [CCActionSequence actions: show,scaleUp,scaleDown, nil];
@@ -95,6 +118,7 @@
     [_retry runAction:buttonAction];
 }
 - (void) goRetry{
+    ((LevelWrapper*)_parent.parent).menu.position = ccp(54,0);
     [((LevelWrapper*)_parent.parent) retry];
 }
 

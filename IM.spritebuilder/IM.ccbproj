@@ -167,15 +167,9 @@
 		<key>images</key>
 		<dict/>
 		<key>images/GUI</key>
-		<dict>
-			<key>isSmartSpriteSheet</key>
-			<true/>
-		</dict>
+		<dict/>
 		<key>images/Objects</key>
-		<dict>
-			<key>isSmartSpriteSheet</key>
-			<true/>
-		</dict>
+		<dict/>
 	</dict>
 	<key>versionStr</key>
 	<string>Version: 1.2.0

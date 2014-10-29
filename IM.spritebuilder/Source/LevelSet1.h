@@ -7,6 +7,9 @@
 //
 
 #import "CCScene.h"
+#import "LevelWrapper.h"
+#import "SideMenu.h"
+#import "LevelStars.h"
 
 @interface LevelSet1 : CCScene
 
