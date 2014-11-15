@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>8</integer>
+	<integer>2</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -41,7 +41,7 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -49,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>PZ_Skate</string>
+				<string>PZ_BBall</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -71,11 +71,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.0</real>
+							<real>0.0</real>
 							<integer>0</integer>
-							<integer>2</integer>
-							<integer>2</integer>
+							<integer>0</integer>
+							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>images/Objects/PZ_Skate.png</string>
+							<string>images/Objects/PZ_BBall.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -144,7 +144,7 @@
 			<key>allowsRotation</key>
 			<true/>
 			<key>bodyShape</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>collisionCategories</key>
 			<array/>
 			<key>collisionMask</key>
@@ -152,175 +152,24 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>0.0</real>
+			<real>9.3808984756469727</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
 			<false/>
 			<key>elasticity</key>
-			<real>0.30000001192092896</real>
+			<real>0.20000000298023224</real>
 			<key>friction</key>
-			<real>0.10000000149011612</real>
+			<real>0.30000001192092896</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>-15.08088207244873</real>
-					<real>32.054355621337891</real>
-				</array>
-				<array>
-					<real>2.6887874603271484</real>
-					<real>24.889610290527344</real>
-				</array>
-				<array>
-					<real>60.021732330322266</real>
-					<real>25.722835540771484</real>
-				</array>
-				<array>
-					<real>88.867820739746094</real>
-					<real>33.912899017333984</real>
-				</array>
-				<array>
-					<real>87.897384643554688</real>
-					<real>28.277397155761719</real>
-				</array>
-				<array>
-					<real>71.128089904785156</real>
-					<real>20.336803436279297</real>
-				</array>
-				<array>
-					<real>68.461265563964844</real>
-					<real>8.1228046417236328</real>
-				</array>
-				<array>
-					<real>59.522792816162109</real>
-					<real>7.9007778167724609</real>
-				</array>
-				<array>
-					<real>58.854217529296875</real>
-					<real>18.283674240112305</real>
-				</array>
-				<array>
-					<real>10.462238311767578</real>
-					<real>17.200979232788086</real>
-				</array>
-				<array>
-					<real>8.6286420822143555</real>
-					<real>8.2874546051025391</real>
-				</array>
-				<array>
-					<real>1.4663898944854736</real>
-					<real>10.954277038574219</real>
-				</array>
-				<array>
-					<real>-3.5878500938415527</real>
-					<real>20.698532104492188</real>
-				</array>
-				<array>
-					<real>-18.940166473388672</real>
-					<real>26.77808952331543</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 			</array>
 			<key>polygons</key>
-			<array>
-				<array>
-					<array>
-						<real>2.6887874603271484</real>
-						<real>24.889610290527344</real>
-					</array>
-					<array>
-						<real>-15.08088207244873</real>
-						<real>32.054355621337891</real>
-					</array>
-					<array>
-						<real>-18.940166473388672</real>
-						<real>26.77808952331543</real>
-					</array>
-					<array>
-						<real>-3.5878500938415527</real>
-						<real>20.698532104492188</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>2.6887874603271484</real>
-						<real>24.889610290527344</real>
-					</array>
-					<array>
-						<real>-3.5878500938415527</real>
-						<real>20.698532104492188</real>
-					</array>
-					<array>
-						<real>1.4663898944854736</real>
-						<real>10.954277038574219</real>
-					</array>
-					<array>
-						<real>8.6286420822143555</real>
-						<real>8.2874546051025391</real>
-					</array>
-					<array>
-						<real>10.462238311767578</real>
-						<real>17.200979232788086</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>60.021732330322266</real>
-						<real>25.722835540771484</real>
-					</array>
-					<array>
-						<real>2.6887874603271484</real>
-						<real>24.889610290527344</real>
-					</array>
-					<array>
-						<real>10.462238311767578</real>
-						<real>17.200979232788086</real>
-					</array>
-					<array>
-						<real>58.854217529296875</real>
-						<real>18.283674240112305</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>71.128089904785156</real>
-						<real>20.336803436279297</real>
-					</array>
-					<array>
-						<real>87.897384643554688</real>
-						<real>28.277397155761719</real>
-					</array>
-					<array>
-						<real>88.867820739746094</real>
-						<real>33.912899017333984</real>
-					</array>
-					<array>
-						<real>60.021732330322266</real>
-						<real>25.722835540771484</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>60.021732330322266</real>
-						<real>25.722835540771484</real>
-					</array>
-					<array>
-						<real>58.854217529296875</real>
-						<real>18.283674240112305</real>
-					</array>
-					<array>
-						<real>59.522792816162109</real>
-						<real>7.9007778167724609</real>
-					</array>
-					<array>
-						<real>68.461265563964844</real>
-						<real>8.1228046417236328</real>
-					</array>
-					<array>
-						<real>71.128089904785156</real>
-						<real>20.336803436279297</real>
-					</array>
-				</array>
-			</array>
+			<array/>
 		</dict>
 		<key>properties</key>
 		<array>
@@ -353,8 +202,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>70</real>
-					<real>40</real>
+					<real>0.0</real>
+					<real>0.0</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>
@@ -366,8 +215,8 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.5</real>
-					<real>0.5</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 			</dict>
 			<dict>
@@ -445,7 +294,7 @@
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>62.695224761962891</real>
+			<real>128</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
 			<key>soundChannel</key>

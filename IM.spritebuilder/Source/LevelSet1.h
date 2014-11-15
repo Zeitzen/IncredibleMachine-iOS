@@ -6,13 +6,9 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCScene.h"
-#import "LevelWrapper.h"
-#import "SideMenu.h"
-#import "LevelStars.h"
+#import "GenericLevelSet.h"
 
-@interface LevelSet1 : CCScene
+@interface LevelSet1 : GenericLevelSet
 
-- (void)loadLevel: (int) levelNum  levelSet: (int) levelSet;
 
 @end

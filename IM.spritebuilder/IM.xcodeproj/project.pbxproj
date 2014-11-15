@@ -11,6 +11,8 @@
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12E0AA19E605FA001D49B1 /* Rotator.m */; };
 		8F34126D19DD29A800A17FA6 /* Level1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34126C19DD29A800A17FA6 /* Level1_1.m */; };
+		8F603A801A02B6BF0096A2BD /* GenericLevelSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F603A7F1A02B6BF0096A2BD /* GenericLevelSet.m */; };
+		8F603A871A02BB750096A2BD /* LevelSet2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F603A861A02BB750096A2BD /* LevelSet2.m */; };
 		8F606C0F1A0140C80089AE61 /* LevelStars.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F606C0E1A0140C80089AE61 /* LevelStars.m */; };
 		8F7C1B6C19EE06520071E055 /* SideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C1B6B19EE06520071E055 /* SideMenu.m */; };
 		8F91ABA319F83CA700E53825 /* EndLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91ABA219F83CA700E53825 /* EndLevel.m */; };
@@ -88,6 +90,10 @@
 		8F12E0AA19E605FA001D49B1 /* Rotator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rotator.m; path = Source/Rotator.m; sourceTree = "<group>"; };
 		8F34126B19DD29A800A17FA6 /* Level1_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1_1.h; path = Source/Level1_1.h; sourceTree = "<group>"; };
 		8F34126C19DD29A800A17FA6 /* Level1_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_1.m; path = Source/Level1_1.m; sourceTree = "<group>"; };
+		8F603A7E1A02B6BF0096A2BD /* GenericLevelSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericLevelSet.h; path = Source/GenericLevelSet.h; sourceTree = "<group>"; };
+		8F603A7F1A02B6BF0096A2BD /* GenericLevelSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericLevelSet.m; path = Source/GenericLevelSet.m; sourceTree = "<group>"; };
+		8F603A851A02BB750096A2BD /* LevelSet2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelSet2.h; path = Source/LevelSet2.h; sourceTree = "<group>"; };
+		8F603A861A02BB750096A2BD /* LevelSet2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelSet2.m; path = Source/LevelSet2.m; sourceTree = "<group>"; };
 		8F606C0D1A0140C80089AE61 /* LevelStars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelStars.h; sourceTree = "<group>"; };
 		8F606C0E1A0140C80089AE61 /* LevelStars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelStars.m; sourceTree = "<group>"; };
 		8F7C1B6A19EE06520071E055 /* SideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenu.h; path = Source/SideMenu.h; sourceTree = "<group>"; };
@@ -253,8 +259,12 @@
 				8F91ABA219F83CA700E53825 /* EndLevel.m */,
 				8F9984DB19E7922D00B32C2E /* GenericLevel.h */,
 				8F9984DC19E7922D00B32C2E /* GenericLevel.m */,
+				8F603A7E1A02B6BF0096A2BD /* GenericLevelSet.h */,
+				8F603A7F1A02B6BF0096A2BD /* GenericLevelSet.m */,
 				8FC7204619E339930053A7F1 /* LevelSet1.h */,
 				8FC7204719E339930053A7F1 /* LevelSet1.m */,
+				8F603A851A02BB750096A2BD /* LevelSet2.h */,
+				8F603A861A02BB750096A2BD /* LevelSet2.m */,
 				8FC7204219E339550053A7F1 /* LevelSets.h */,
 				8FC7204319E339550053A7F1 /* LevelSets.m */,
 				8F606C0D1A0140C80089AE61 /* LevelStars.h */,
@@ -479,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FEE3C8919FAFB15007AD6F2 /* Level2_2.m in Sources */,
+				8F603A871A02BB750096A2BD /* LevelSet2.m in Sources */,
 				8F606C0F1A0140C80089AE61 /* LevelStars.m in Sources */,
 				8FE05F7719DD03F40069F333 /* BowBall.m in Sources */,
 				8FEE3C9B19FAFB80007AD6F2 /* Level2_8.m in Sources */,
@@ -497,6 +508,7 @@
 				8FEE3C9519FAFB6A007AD6F2 /* Level2_6.m in Sources */,
 				8FEE3C8C19FAFB24007AD6F2 /* Level2_3.m in Sources */,
 				8F9270EC19F9B5CA00E0A337 /* Level1_3.m in Sources */,
+				8F603A801A02B6BF0096A2BD /* GenericLevelSet.m in Sources */,
 				8F9984DD19E7922D00B32C2E /* GenericLevel.m in Sources */,
 				8FC0D3CA19E7156F00683E9B /* LevelWrapper.m in Sources */,
 				8FD20EFB19E625F900A5113B /* DashedCircle.m in Sources */,

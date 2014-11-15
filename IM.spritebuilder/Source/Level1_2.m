@@ -11,9 +11,14 @@
 @implementation Level1_2 {
     CCNode* _fball;
     CCNode* _shelf1;
+    CCSprite* _Mini1;
+
 }
 
 - (void)didLoadFromCCB {
+    
+    [super.MiniArray addObject:_Mini1];
+
     [super.StaticArray addObject:_shelf1];
     [super.AllMovableArray addObject:_shelf1];
     

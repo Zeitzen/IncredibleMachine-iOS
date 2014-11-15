@@ -390,7 +390,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_5</string>
+											<string>level5</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -716,7 +716,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_6</string>
+											<string>level6</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -1042,7 +1042,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_7</string>
+											<string>level7</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -1368,7 +1368,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_8</string>
+											<string>level8</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -1779,7 +1779,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_1</string>
+											<string>level1</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -2105,7 +2105,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_2</string>
+											<string>level2</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -2431,7 +2431,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_3</string>
+											<string>level3</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -2757,7 +2757,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>level1_4</string>
+											<string>level4</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -3012,6 +3012,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -3701,8 +3703,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

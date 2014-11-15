@@ -41,7 +41,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
     LevelWrapper* lr = ((LevelWrapper*)_parent.parent);
-    int lnum = lr.levelNum;
+    int lnum = lr.levelNum -1;
     int lset = lr.levelSet;
     
     NSMutableArray* save;
@@ -50,8 +50,8 @@
     else
         save = [[defaults arrayForKey:@"set2"] mutableCopy];
     
-    if( stars > [[save objectAtIndex:(lnum-1)] integerValue]){
-        [save insertObject:[NSNumber numberWithInt:stars] atIndex:(lnum-1) ];
+    if( stars > [[save objectAtIndex:(lnum)] integerValue]){
+        save[lnum] =[NSNumber numberWithInt:stars];
     }
 
     if(lset==1)
@@ -102,7 +102,7 @@
         levelSet++;
     }
     
-    if(levelSet > 1){
+    if(levelSet > 2){
         [[CCDirector sharedDirector]  popScene];
     }else{
         [lr changeLevel:levelNum levelSet:levelSet];

@@ -22,6 +22,8 @@
 @property (nonatomic,strong)    NSMutableArray* DynamicArray;
 // objetos con fisica dinamica que el usuario no puede mover
 @property (nonatomic,strong)    NSMutableArray* LockedDynamicArray;
+//mini objetos 
+@property (nonatomic,strong)    NSMutableArray* MiniArray;
 // nodo de fisica
 @property (nonatomic,strong)    CCPhysicsNode* physicsNode;
 // end

@@ -1,15 +1,14 @@
 //
-//  LevelSet1.m
+//  GenericLevelSet.m
 //  IM
 //
-//  Created by Damian Rizzotto on 06/10/14.
+//  Created by Damian Rizzotto on 30/10/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "LevelSet1.h"
+#import "GenericLevelSet.h"
 
-
-@implementation LevelSet1{
+@implementation GenericLevelSet{
     CCNode* _L1;
     CCNode* _L2;
     CCNode* _L3;
@@ -18,6 +17,7 @@
     CCNode* _L6;
     CCNode* _L7;
     CCNode* _L8;
+    
     CCNode* _back;
     
     LevelStars* _S1;
@@ -34,8 +34,8 @@
     [super onEnter];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-
-    NSMutableArray* save = [[defaults arrayForKey:@"set1"] mutableCopy];
+    
+    NSMutableArray* save = [[defaults arrayForKey:_setName] mutableCopy];
     
     [_S1 showStars:[[save objectAtIndex:0] integerValue]];
     [_S2 showStars:[[save objectAtIndex:1] integerValue]];
@@ -47,19 +47,19 @@
     [_S8 showStars:[[save objectAtIndex:7] integerValue]];
 }
 
-- (void)loadLevel: (int) levelNum  levelSet: (int) levelSet {
+- (void)loadLevel: (int) levelNum {
     
-    NSString* level = [NSString stringWithFormat:@"Levels/Level%i_%i",levelSet,levelNum];
-
+    NSString* level = [NSString stringWithFormat:@"Levels/Level%i_%i",_setNum,levelNum];
+    
     CCNode *gameplay = [CCBReader load:level];
     gameplay.name=@"gameplay";
     
     LevelWrapper* LevelFrame = (LevelWrapper*)[CCBReader loadAsScene:@"LevelFrame"];
     
     ((LevelWrapper*) LevelFrame.children[0]).levelNum=levelNum;
-    ((LevelWrapper*) LevelFrame.children[0]).levelSet=levelSet;
+    ((LevelWrapper*) LevelFrame.children[0]).levelSet=_setNum;
     
-    [[(SideMenu*)[LevelFrame.children[0] menu] Label] setString: [NSString stringWithFormat:@"%i - %i",levelSet,levelNum]];
+    [[(SideMenu*)[LevelFrame.children[0] menu] Label] setString: [NSString stringWithFormat:@"%i - %i",_setNum,levelNum]];
     
     CCNode* aux = LevelFrame.children.firstObject;
     [aux addChild:gameplay z:-10];
@@ -69,50 +69,50 @@
     [[CCDirector sharedDirector] replaceScene:LevelFrame];
 }
 
--(void)animateAndCall:(CCNode*) n star: (CCNode*) star levelnum: (int) lnum levelset: (int) lset{
+-(void)animateAndCall:(CCNode*) n star: (CCNode*) star levelnum: (int) lnum{
     float duration = 0.075f;
     id scaleUp = [CCActionScaleTo actionWithDuration:duration scaleX:1.2f scaleY:1.2f];
     id scaleDown = [CCActionScaleTo actionWithDuration:duration scaleX:1.0f scaleY:1.0f];
-    id call = [CCActionCallBlock actionWithBlock:^{ [self loadLevel:lnum levelSet:lset]; }];
+    id call = [CCActionCallBlock actionWithBlock:^{ [self loadLevel:lnum]; }];
     
     id buttonAction = [CCActionSequence actions: scaleUp,scaleDown, call, nil];
     id starAction = [CCActionSequence actions: scaleUp,scaleDown, nil];
-
+    
     [n runAction:buttonAction];
     
     [star runAction:starAction];
 }
 
-- (void)level1_1 {
-    [self animateAndCall:_L1 star:_S1 levelnum:1 levelset:1];
+- (void)level1 {
+    [self animateAndCall:_L1 star:_S1 levelnum:1 ];
 }
 
-- (void)level1_2 {
-    [self animateAndCall:_L2 star:_S2 levelnum:2 levelset:1];
+- (void)level2 {
+    [self animateAndCall:_L2 star:_S2 levelnum:2 ];
 }
 
-- (void)level1_3 {
-    [self animateAndCall:_L3 star:_S3 levelnum:3 levelset:1];
+- (void)level3 {
+    [self animateAndCall:_L3 star:_S3 levelnum:3 ];
 }
 
-- (void)level1_4 {
-    [self animateAndCall:_L4 star:_S4 levelnum:4 levelset:1];
+- (void)level4 {
+    [self animateAndCall:_L4 star:_S4 levelnum:4 ];
 }
 
-- (void)level1_5 {
-    [self animateAndCall:_L5 star:_S5 levelnum:5 levelset:1];
+- (void)level5 {
+    [self animateAndCall:_L5 star:_S5 levelnum:5 ];
 }
 
-- (void)level1_6 {
-    [self animateAndCall:_L6 star:_S6 levelnum:6 levelset:1];
+- (void)level6 {
+    [self animateAndCall:_L6 star:_S6 levelnum:6 ];
 }
 
-- (void)level1_7 {
-    [self animateAndCall:_L7 star:_S7 levelnum:7 levelset:1];
+- (void)level7 {
+    [self animateAndCall:_L7 star:_S7 levelnum:7 ];
 }
 
-- (void)level1_8 {
-    [self animateAndCall:_L8 star:_S8 levelnum:8 levelset:1];
+- (void)level8 {
+    [self animateAndCall:_L8 star:_S8 levelnum:8 ];
 }
 
 

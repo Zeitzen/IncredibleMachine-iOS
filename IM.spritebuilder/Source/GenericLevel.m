@@ -24,6 +24,8 @@
     CCNode* _Star1;
     CCNode* _Star2;
     CCNode* _Star3;
+    
+    CCSprite* _mini;
 }
 
 -(id)init{
@@ -39,6 +41,7 @@
     _StaticArray=[[NSMutableArray alloc] init];
     _DynamicArray=[[NSMutableArray alloc] init];
     _LockedDynamicArray=[[NSMutableArray alloc] init];
+    _MiniArray=[[NSMutableArray alloc] init];
     
     _stars = 3;
 
@@ -52,8 +55,10 @@
     rotating = FALSE;
     
     [self CheckObj:touch.locationInWorld];
+    [self CheckMini:touch.locationInWorld];
     
     if(_selected != NULL){
+        _selected.visible=TRUE;
         if(!rotating){
             float scale1 = (_selected.contentSize.width * 4) /(_RotateCircle.contentSize.width);
             float scale2 = (_selected.contentSize.height * 4) /(_RotateCircle.contentSize.height);
@@ -123,6 +128,13 @@
         _selected = aux;
     }
     
+}
+
+-(void)CheckMini:(CGPoint)touch{
+    
+    for(CCSprite* c in _MiniArray)
+        if(CGRectContainsPoint([c boundingBox], touch))
+            c.visible=FALSE;
 }
 
 - (void)play {

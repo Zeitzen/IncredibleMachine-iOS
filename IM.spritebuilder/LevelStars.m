@@ -16,7 +16,6 @@
 
 -(void)showStars:(int)stars{
     
-    CCLOG(@"%i",stars);
     switch (stars) {
         case 0:
             return;
