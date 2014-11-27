@@ -9,7 +9,7 @@
 #import "Level1_2.h"
 
 @implementation Level1_2 {
-    CCNode* _fball;
+    CCNode* _Fball;
     CCNode* _shelf1;
     CCSprite* _Mini1;
 
@@ -22,12 +22,12 @@
     [super.StaticArray addObject:_shelf1];
     [super.AllMovableArray addObject:_shelf1];
     
-    [super.LockedDynamicArray addObject:_fball];
+    [super.LockedDynamicArray addObject:_Fball];
     
     [[super physicsNode] setCollisionDelegate:self];
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair EndGame:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair EndGame:(CCNode *)nodeA Ball:(CCNode *)nodeB {
 
     super.End.visible = TRUE;
     [((EndLevel*)super.End) showStars: (3 - super.stars)];
