@@ -25,16 +25,12 @@
 		8FE05F7719DD03F40069F333 /* BowBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE05F7619DD03F40069F333 /* BowBall.m */; };
 		8FEE3C7719FAFAAF007AD6F2 /* Level1_4.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C7619FAFAAF007AD6F2 /* Level1_4.m */; };
 		8FEE3C7A19FAFAC2007AD6F2 /* Level1_5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C7919FAFAC2007AD6F2 /* Level1_5.m */; };
-		8FEE3C7D19FAFAD2007AD6F2 /* Level1_6.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C7C19FAFAD2007AD6F2 /* Level1_6.m */; };
-		8FEE3C8019FAFADE007AD6F2 /* Level1_8.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C7F19FAFADE007AD6F2 /* Level1_8.m */; };
-		8FEE3C8319FAFAF5007AD6F2 /* Level1_7.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C8219FAFAF5007AD6F2 /* Level1_7.m */; };
+		8FEE3C8319FAFAF5007AD6F2 /* Level1_6.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C8219FAFAF5007AD6F2 /* Level1_6.m */; };
 		8FEE3C8919FAFB15007AD6F2 /* Level2_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C8819FAFB15007AD6F2 /* Level2_2.m */; };
 		8FEE3C8C19FAFB24007AD6F2 /* Level2_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C8B19FAFB24007AD6F2 /* Level2_3.m */; };
 		8FEE3C8F19FAFB31007AD6F2 /* Level2_4.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C8E19FAFB31007AD6F2 /* Level2_4.m */; };
 		8FEE3C9219FAFB59007AD6F2 /* Level2_5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C9119FAFB59007AD6F2 /* Level2_5.m */; };
 		8FEE3C9519FAFB6A007AD6F2 /* Level2_6.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C9419FAFB6A007AD6F2 /* Level2_6.m */; };
-		8FEE3C9819FAFB75007AD6F2 /* Level2_7.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C9719FAFB75007AD6F2 /* Level2_7.m */; };
-		8FEE3C9B19FAFB80007AD6F2 /* Level2_8.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C9A19FAFB80007AD6F2 /* Level2_8.m */; };
 		8FEE3C9E19FAFBC7007AD6F2 /* Level2_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE3C9D19FAFBC7007AD6F2 /* Level2_1.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -119,12 +115,8 @@
 		8FEE3C7619FAFAAF007AD6F2 /* Level1_4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_4.m; path = Source/Level1_4.m; sourceTree = "<group>"; };
 		8FEE3C7819FAFAC2007AD6F2 /* Level1_5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1_5.h; path = Source/Level1_5.h; sourceTree = "<group>"; };
 		8FEE3C7919FAFAC2007AD6F2 /* Level1_5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_5.m; path = Source/Level1_5.m; sourceTree = "<group>"; };
-		8FEE3C7B19FAFAD2007AD6F2 /* Level1_6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1_6.h; path = Source/Level1_6.h; sourceTree = "<group>"; };
-		8FEE3C7C19FAFAD2007AD6F2 /* Level1_6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_6.m; path = Source/Level1_6.m; sourceTree = "<group>"; };
-		8FEE3C7E19FAFADE007AD6F2 /* Level1_8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1_8.h; path = Source/Level1_8.h; sourceTree = "<group>"; };
-		8FEE3C7F19FAFADE007AD6F2 /* Level1_8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_8.m; path = Source/Level1_8.m; sourceTree = "<group>"; };
-		8FEE3C8119FAFAF5007AD6F2 /* Level1_7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1_7.h; path = Source/Level1_7.h; sourceTree = "<group>"; };
-		8FEE3C8219FAFAF5007AD6F2 /* Level1_7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_7.m; path = Source/Level1_7.m; sourceTree = "<group>"; };
+		8FEE3C8119FAFAF5007AD6F2 /* Level1_6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level1_6.h; path = Source/Level1_6.h; sourceTree = "<group>"; };
+		8FEE3C8219FAFAF5007AD6F2 /* Level1_6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level1_6.m; path = Source/Level1_6.m; sourceTree = "<group>"; };
 		8FEE3C8719FAFB15007AD6F2 /* Level2_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level2_2.h; path = Source/Level2_2.h; sourceTree = "<group>"; };
 		8FEE3C8819FAFB15007AD6F2 /* Level2_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level2_2.m; path = Source/Level2_2.m; sourceTree = "<group>"; };
 		8FEE3C8A19FAFB24007AD6F2 /* Level2_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level2_3.h; path = Source/Level2_3.h; sourceTree = "<group>"; };
@@ -135,10 +127,6 @@
 		8FEE3C9119FAFB59007AD6F2 /* Level2_5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level2_5.m; path = Source/Level2_5.m; sourceTree = "<group>"; };
 		8FEE3C9319FAFB6A007AD6F2 /* Level2_6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level2_6.h; path = Source/Level2_6.h; sourceTree = "<group>"; };
 		8FEE3C9419FAFB6A007AD6F2 /* Level2_6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level2_6.m; path = Source/Level2_6.m; sourceTree = "<group>"; };
-		8FEE3C9619FAFB75007AD6F2 /* Level2_7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level2_7.h; path = Source/Level2_7.h; sourceTree = "<group>"; };
-		8FEE3C9719FAFB75007AD6F2 /* Level2_7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level2_7.m; path = Source/Level2_7.m; sourceTree = "<group>"; };
-		8FEE3C9919FAFB80007AD6F2 /* Level2_8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level2_8.h; path = Source/Level2_8.h; sourceTree = "<group>"; };
-		8FEE3C9A19FAFB80007AD6F2 /* Level2_8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level2_8.m; path = Source/Level2_8.m; sourceTree = "<group>"; };
 		8FEE3C9C19FAFBC7007AD6F2 /* Level2_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level2_1.h; path = Source/Level2_1.h; sourceTree = "<group>"; };
 		8FEE3C9D19FAFBC7007AD6F2 /* Level2_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level2_1.m; path = Source/Level2_1.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
@@ -211,12 +199,8 @@
 				8FEE3C7619FAFAAF007AD6F2 /* Level1_4.m */,
 				8FEE3C7819FAFAC2007AD6F2 /* Level1_5.h */,
 				8FEE3C7919FAFAC2007AD6F2 /* Level1_5.m */,
-				8FEE3C7B19FAFAD2007AD6F2 /* Level1_6.h */,
-				8FEE3C7C19FAFAD2007AD6F2 /* Level1_6.m */,
-				8FEE3C8119FAFAF5007AD6F2 /* Level1_7.h */,
-				8FEE3C8219FAFAF5007AD6F2 /* Level1_7.m */,
-				8FEE3C7E19FAFADE007AD6F2 /* Level1_8.h */,
-				8FEE3C7F19FAFADE007AD6F2 /* Level1_8.m */,
+				8FEE3C8119FAFAF5007AD6F2 /* Level1_6.h */,
+				8FEE3C8219FAFAF5007AD6F2 /* Level1_6.m */,
 				8FEE3C9C19FAFBC7007AD6F2 /* Level2_1.h */,
 				8FEE3C9D19FAFBC7007AD6F2 /* Level2_1.m */,
 				8FEE3C8719FAFB15007AD6F2 /* Level2_2.h */,
@@ -229,10 +213,6 @@
 				8FEE3C9119FAFB59007AD6F2 /* Level2_5.m */,
 				8FEE3C9319FAFB6A007AD6F2 /* Level2_6.h */,
 				8FEE3C9419FAFB6A007AD6F2 /* Level2_6.m */,
-				8FEE3C9619FAFB75007AD6F2 /* Level2_7.h */,
-				8FEE3C9719FAFB75007AD6F2 /* Level2_7.m */,
-				8FEE3C9919FAFB80007AD6F2 /* Level2_8.h */,
-				8FEE3C9A19FAFB80007AD6F2 /* Level2_8.m */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -492,11 +472,10 @@
 				8F603A871A02BB750096A2BD /* LevelSet2.m in Sources */,
 				8F606C0F1A0140C80089AE61 /* LevelStars.m in Sources */,
 				8FE05F7719DD03F40069F333 /* BowBall.m in Sources */,
-				8FEE3C9B19FAFB80007AD6F2 /* Level2_8.m in Sources */,
 				8FEE3C7719FAFAAF007AD6F2 /* Level1_4.m in Sources */,
 				56C45A8A19F81ECB000AC083 /* Level1_2.m in Sources */,
 				8F7C1B6C19EE06520071E055 /* SideMenu.m in Sources */,
-				8FEE3C8319FAFAF5007AD6F2 /* Level1_7.m in Sources */,
+				8FEE3C8319FAFAF5007AD6F2 /* Level1_6.m in Sources */,
 				8FEE3C7A19FAFAC2007AD6F2 /* Level1_5.m in Sources */,
 				8F12E0AB19E605FA001D49B1 /* Rotator.m in Sources */,
 				8FC7204419E339550053A7F1 /* LevelSets.m in Sources */,
@@ -513,11 +492,8 @@
 				8FC0D3CA19E7156F00683E9B /* LevelWrapper.m in Sources */,
 				8FD20EFB19E625F900A5113B /* DashedCircle.m in Sources */,
 				8FEE3C9219FAFB59007AD6F2 /* Level2_5.m in Sources */,
-				8FEE3C9819FAFB75007AD6F2 /* Level2_7.m in Sources */,
 				8FEE3C9E19FAFBC7007AD6F2 /* Level2_1.m in Sources */,
-				8FEE3C7D19FAFAD2007AD6F2 /* Level1_6.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
-				8FEE3C8019FAFADE007AD6F2 /* Level1_8.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

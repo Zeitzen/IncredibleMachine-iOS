@@ -69,19 +69,4 @@
     [[CCDirector sharedDirector]  popScene];
 }
 
--(void)sound{
-    
-    [((LevelWrapper*)_parent) animate:_sound];
-
-    
-    CCSpriteFrame *startNormalImage;
-
-    //startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_SoundOnButton.png"];
-
-    startNormalImage = [CCSpriteFrame frameWithImageNamed:@"images/GUI/PZ_GUI_SoundOffButton.png"];
-
-    [_sound setBackgroundSpriteFrame:startNormalImage forState:CCControlStateNormal];
-    
-}
-
 @end

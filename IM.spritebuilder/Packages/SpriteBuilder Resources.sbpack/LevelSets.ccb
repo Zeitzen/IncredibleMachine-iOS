@@ -1564,7 +1564,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>0/24</string>
+							<string>0/18</string>
 							<false/>
 						</array>
 					</dict>
@@ -1860,7 +1860,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>0/24</string>
+							<string>0/18</string>
 							<false/>
 						</array>
 					</dict>

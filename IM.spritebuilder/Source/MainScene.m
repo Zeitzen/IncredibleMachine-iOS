@@ -13,11 +13,9 @@
 -(id)init{
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-   //if ([defaults objectForKey:@"set1"] == nil ){
+   if ([defaults objectForKey:@"set1"] == nil ){
     
         NSMutableArray* aux =[[NSMutableArray alloc] initWithCapacity:8];
-        [aux addObject:@0];
-        [aux addObject:@0];
         [aux addObject:@0];
         [aux addObject:@0];
         [aux addObject:@0];
@@ -30,7 +28,7 @@
         [defaults synchronize];
 
         [defaults setBool:TRUE forKey:@"sound"];
-   //}
+   }
     
     return [super init];
 }

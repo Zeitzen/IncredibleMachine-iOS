@@ -25,7 +25,7 @@
     int count2=0;
     int total=0;
     
-    for(int i=0; i<8; i++){
+    for(int i=0; i<6; i++){
         int aux1=[[set1 objectAtIndex:i] integerValue];
         int aux2=[[set2 objectAtIndex:i] integerValue];
         count1 +=aux1;

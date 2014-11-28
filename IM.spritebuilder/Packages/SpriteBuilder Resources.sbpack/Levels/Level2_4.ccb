@@ -2170,7 +2170,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>Level2_3</string>
+		<string>Level2_4</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -2239,6 +2239,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

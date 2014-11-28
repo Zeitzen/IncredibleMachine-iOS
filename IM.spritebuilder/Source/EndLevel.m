@@ -97,7 +97,7 @@
     int levelSet = lr.levelSet;
     levelNum++;
     lr.menu.position = ccp(54,0);
-    if(levelNum == 8){
+    if(levelNum == 7){
         levelNum = 1;
         levelSet++;
     }

@@ -586,8 +586,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1253,7 +1251,7 @@
 								<key>value</key>
 								<array>
 									<real>128</real>
-									<real>238.00001525878906</real>
+									<real>236.03398132324219</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1278,7 +1276,7 @@
 								<key>type</key>
 								<string>Degrees</string>
 								<key>value</key>
-								<real>176.12362670898438</real>
+								<real>180</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1289,6 +1287,8 @@
 								<string>Objects/Pipe1.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -2066,7 +2066,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>Level2_1</string>
+		<string>Level2_2</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

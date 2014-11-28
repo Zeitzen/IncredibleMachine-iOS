@@ -15,8 +15,6 @@
     CCNode* _L4;
     CCNode* _L5;
     CCNode* _L6;
-    CCNode* _L7;
-    CCNode* _L8;
     
     CCNode* _back;
     
@@ -26,8 +24,6 @@
     LevelStars* _S4;
     LevelStars* _S5;
     LevelStars* _S6;
-    LevelStars* _S7;
-    LevelStars* _S8;
 }
 
 -(void)onEnter{
@@ -43,8 +39,6 @@
     [_S4 showStars:[[save objectAtIndex:3] integerValue]];
     [_S5 showStars:[[save objectAtIndex:4] integerValue]];
     [_S6 showStars:[[save objectAtIndex:5] integerValue]];
-    [_S7 showStars:[[save objectAtIndex:6] integerValue]];
-    [_S8 showStars:[[save objectAtIndex:7] integerValue]];
 }
 
 - (void)loadLevel: (int) levelNum {
@@ -105,14 +99,6 @@
 
 - (void)level6 {
     [self animateAndCall:_L6 star:_S6 levelnum:6 ];
-}
-
-- (void)level7 {
-    [self animateAndCall:_L7 star:_S7 levelnum:7 ];
-}
-
-- (void)level8 {
-    [self animateAndCall:_L8 star:_S8 levelnum:8 ];
 }
 
 
